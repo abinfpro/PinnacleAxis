@@ -7,16 +7,19 @@ import SectionWithImage from "../Components/SectionWithImage";
 import ServiceCard from "../Components/ServiceCard";
 import ScrollingCards from "../Components/ScrollingCards";
 import ContactCard from "../Components/ContactCard";
+import { useSearchParams } from 'react-router-dom';
+import { useState,useEffect } from "react";
+
 
 const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Welding Services", src: "public/hero1.jpg" },
-  { id: 2, number: "02", title: "Metal Fabrication", src: "public/experties.jpg" },
-  { id: 3, number: "03", title: "Robotic Arms", src: "public/experties1.jpg" },
-  { id: 4, number: "04", title: "CNC Machining", src: "public/experties2.jpg" },
-  { id: 5, number: "05", title: "Cutting Services", src: "public/experties.jpg" },
+  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg" },
 ];
 
 const serviceCards = [
@@ -151,6 +154,38 @@ const Servicespage = () => {
     }
   `;
 
+
+
+
+  const [searchParams] = useSearchParams();
+  const serviceKey = searchParams.get('service'); // Gets 'machining', 'development', etc.
+  const [serviceData, setServiceData] = useState(null);
+
+  // Define a mapping object for your service content
+  const ALL_SERVICES = {
+      'machining': { title: 'Machining Division', des: 'At Pinnacle Axis, our Machining Division specializes in delivering high-precision components for diverse industrial applications. With state-of-the-art machinery and skilled professionals, we provide solutions that meet the tightest tolerances and the highest quality standards.',img:"public/serviceimg.png" },
+      'Fabrication': { title: 'Steel Fabrication Division', des: 'At Pinnacle Axis, our Steel Fabrication Division delivers durable, precisely engineered steel structures for diverse industries. With advanced facilities and skilled experts, we provide customized solutions that meet exact specifications and ensure lasting performance.',img:"public/steel.jpg" },
+      'Rubber': { title: 'Rubber and PU Division', des: 'At Pinnacle Axis, our Rubber and PU Division specializes in manufacturing high-quality rubber and polyurethane components for various industrial applications. Using advanced molding techniques and premium materials, we deliver durable, flexible, and precision-engineered solutions tailored to meet specific performance requirements.',img:"public/rubber.jpg" },
+      'Laser': { title: 'Laser and CNC', des: 'At Pinnacle Axis, our Laser and CNC Division delivers high-precision cutting, engraving, and machining solutions. With advanced technology and skilled expertise, we ensure exceptional accuracy, fine detailing, and efficient production for diverse industries.',img:"public/laser.jpg" },
+      'Cutting': { title: 'Cutting, Bending & Rolling', des: 'At Pinnacle Axis, our Cutting, Bending & Rolling Division delivers precise sheet metal processing solutions. Using advanced machinery and skilled expertise, we ensure accurate cuts, smooth bends, and high-quality rolled components with flawless finishes.',img:"public/cutting.jpg" },
+      // ... and so on for all 5 services
+  };
+
+  useEffect(() => {
+      if (serviceKey) {
+          setServiceData(ALL_SERVICES[serviceKey]);
+      } else {
+           // Handle case with no parameter or a default view
+           setServiceData({ title: 'Our Services', content: 'Please select a division from the menu.' });
+      }
+  }, [serviceKey]); // Re-run effect whenever the URL changes
+
+  if (!serviceData) return <div>Loading...</div>;
+
+
+
+
+
   return (
     <div
       style={{ fontFamily: "Inter, sans-serif" }}
@@ -165,7 +200,7 @@ const Servicespage = () => {
       <section className="slider-wrapper lg:mb-[60px] relative">
         <div className="h-full">
           <img
-            src="public/serviceimg.png"
+            src={serviceData.img}
             alt="Services Background"
             className="w-full h-full object-cover"
           />
@@ -176,14 +211,12 @@ const Servicespage = () => {
           <div className="flex gap-4 lg:gap-7 text-white w-full max-w-4xl px-4 sm:px-8 text-center">
             <div className="flex flex-col gap-4 items-center">
               <h1 className=" text-2xl md:text-[48px] font-semibold tracking-wider">
-                Machining Division
+              {serviceData.title}
               </h1>
-              <p className="font-medium leading-[24px] sm:leading-[28px] text-[18px] sm:text-[20px] lg:text-[22px] text-center">
-                At Pinnacle Axis, our Machining Division specializes in delivering high-precision components for diverse
-                industrial applications. With state-of-the-art machinery and skilled professionals, we provide solutions 
-                that meet the tightest tolerances and the highest quality standards.
+              <p className="font-medium leading-[20px] md:leading-[28px] lg:leading-[28px] text-[16px] md:text-[20px] lg:text-[22px] text-center">
+            {serviceData.des}
               </p>
-              <div className="flex justify-center lg:flex lg:justify-center">
+              <div className="flex justify-center hidden md:block  md:flex md:justify-center">
                 <button 
                   onClick={() => navigate("/contact")}
                   style={{ borderColor: "#EA4D33" }}
@@ -223,7 +256,7 @@ const Servicespage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute left-24 w-[50px] top-[2000px] lg:top-[2685px] z-4" src="public/Group10.svg" alt="" />
+        <img className="absolute left-24 w-[50px] top-[2000px] lg:top-[2750px] z-4" src="public/Group10.svg" alt="" />
       </div>
 
       {/* What We Do Section */}
@@ -246,16 +279,11 @@ const Servicespage = () => {
           <div className="flex items-center gap-2">
             <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
             The Machining Division at Pinnacle Axis is the backbone of our precision engineering capabilities. With a fleet of advanced CNC machines and a team of experienced professionals, we deliver solutions that consistently meet the highest global benchmarks.
-
-We specialize in producing complex, high-accuracy components for industries where reliability and precision are mission-critical. Our capabilities include:
-
-Turning & Milling – Crafting precise cylindrical and prismatic parts with tight tolerances.
-
-Drilling & Boring – Executing accurate hole-making for critical assemblies and heavy-duty applications.
-
-Custom Machining Jobs – Tailored production for specialized industrial requirements.
-
-By integrating cutting-edge tools with strict quality control, we ensure durability, repeatability, and flawless performance in every component manufactured. Our Machining Division proudly serves industries such as oil & gas, construction, manufacturing, aerospace, and heavy machinery—providing parts that keep their operations running smoothly and efficiently.</p>
+           <p>  We specialize in producing complex, high-accuracy components for industries where reliability and precision are mission-critical. Our capabilities include: </p>
+            Turning & Milling – Crafting precise cylindrical and prismatic parts with tight tolerances.
+            Drilling & Boring – Executing accurate hole-making for critical assemblies and heavy-duty applications.
+            Custom Machining Jobs – Tailored production for specialized industrial requirements.
+            By integrating cutting-edge tools with strict quality control, we ensure durability, repeatability, and flawless performance in every component manufactured. Our Machining Division proudly serves industries such as oil & gas, construction, manufacturing, aerospace, and heavy machinery—providing parts that keep their operations running smoothly and efficiently.</p>
           </div>
         </div>
       </SectionWithImage>
@@ -263,14 +291,15 @@ By integrating cutting-edge tools with strict quality control, we ensure durabil
       {/* Why Choose Us Section */}
       <section className="flex flex-col gap-6 sm:gap-8 lg:gap-10 w-auto items-center justify-center pt-12 sm:pt-16 lg:pt-20 h-auto sm:h-[600px] lg:h-[717px]">
         <p className="font-semibold text-3xl sm:text-4xl lg:text-5xl">Why Choose Us</p>
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 lg:gap-15">
+        <div className="flex flex-col sm:flex-row gap-8 md:flex md:w-full md:gap-5 md:px-3 md:justify-around lg:justify-center sm:gap-12 lg:gap-15">
           {serviceCards.map((card, index) => (
             <ServiceCard
               key={index}
               imageSrc={card.imageSrc}
               imageAlt={card.imageAlt}
               title={card.title}
-              className="w-full sm:w-[300px] lg:w-auto"
+              className="w-full  lg:w-auto"
+              service="true"
             />
           ))}
         </div>
@@ -279,7 +308,7 @@ By integrating cutting-edge tools with strict quality control, we ensure durabil
       {/* Services Section */}
       <section 
         style={{ background: "#E1E6E9", margin: "60px 0px 0px 0px" }} 
-        className="relative py-8 sm:py-12 lg:h-[740px] lg:py-16 bg-white"
+        className="relative py-8 sm:py-12 md:h-[400px] lg:h-[740px] lg:py-16 bg-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start mb-8 lg:mb-10">

@@ -104,7 +104,7 @@ const Aboutpage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[300px] lg:top-[355px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[800px] lg:bottom-[1175px] z-2" src="public/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[800px] lg:bottom-[1249px] z-2" src="public/Group1.svg" alt="" />
       </div>
 
       {/* Mission Section */}

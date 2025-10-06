@@ -13,7 +13,7 @@ const ContactCard = ({
   tag
 }) => {
   return (
-    <section className={`pt-8 h-[400px] ${tag ? "lg:mt-[100px]" : ""} sm:py-10 bg-white ${className}`}>
+    <section className={`pt-8 h-[400px] ${tag ? "lg:mt-[100px] mt-[400px] " : ""} sm:py-10 bg-white ${className}`}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
       <div className="w-full max-w-6xl mx-auto bg-white flex flex-col items-center justify-center overflow-hidden">
         {/* Changed lg: to md: for the two-column grid starting at 768px */}

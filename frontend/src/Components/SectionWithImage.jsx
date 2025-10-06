@@ -18,7 +18,7 @@ const SectionWithImage = ({
       style={{ 
         background: backgroundColor, 
       }} 
-      className={`py-8 sm:py-12 lg:h-[540px] ${tag ? "md:h-[500px] lg:mt-[10px] lg:h-[650px]" : ""} h-[400px] lg:py-16 lg:mt-[-90px] lg:ml-[55px] bg-white ${className}`}
+      className={`py-8 sm:py-12 lg:h-[540px] ${tag ? "md:h-[500px] h-[850px] lg:mt-[10px] lg:h-[650px]" : ""} h-[400px] lg:py-16 lg:mt-[-90px] lg:ml-[55px] bg-white ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start">

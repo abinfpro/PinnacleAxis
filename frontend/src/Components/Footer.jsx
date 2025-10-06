@@ -31,7 +31,7 @@ const Footer = ({tag}) => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Automation
+                Features
                 </a>
               </li>
               <li>
@@ -41,7 +41,7 @@ const Footer = ({tag}) => {
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Fabrication
+                Pricing
                 </a>
               </li>
             </ul>
@@ -60,12 +60,22 @@ const Footer = ({tag}) => {
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Our Team
+                Blog
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
                   Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Customers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Brand
                 </a>
               </li>
             </ul>
@@ -79,17 +89,22 @@ const Footer = ({tag}) => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Case Studies
+                Community
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Blog
+                Contact
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Support
+                DPA
+                 </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Terms of service
                 </a>
               </li>
             </ul>

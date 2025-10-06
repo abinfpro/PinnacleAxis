@@ -14,11 +14,11 @@ const PRIMARY_DARK = "#131C23";
 const heroImages = ["public/homeimage.png", "public/hero1.jpg"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Welding Services", src: "public/hero1.jpg" },
-  { id: 2, number: "02", title: "Metal Fabrication", src: "public/experties.jpg" },
-  { id: 3, number: "03", title: "Robotic Arms", src: "public/experties1.jpg" },
-  { id: 4, number: "04", title: "CNC Machining", src: "public/experties2.jpg" },
-  { id: 5, number: "05", title: "Cutting Services", src: "public/experties.jpg" },
+  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg" },
 ];
 
 const statsData = [
@@ -285,7 +285,7 @@ const Homepage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1515px] z-2" src="public/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1589px] z-2" src="public/Group1.svg" alt="" />
         <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="public/Group10.svg" alt="" />
       </div>
 
