@@ -14,7 +14,7 @@ const ScrollingCards = ({ cards, containerWidth = "1335px", leftPosition = "125p
       <div className={`scroll-content-wrapper`}>
         {/* Render content twice for the seamless infinite loop */}
         {[...cards, ...cards].map((card, index) => (
-          <div key={`${card.id}-${index}`} onClick={window.scrollTo({top:0})} className="scroll-item">
+          <div key={`${card.id}-${index}`} className="scroll-item">
             <div className="relative w-full h-[300px] sm:h-[350px] lg:h-[400px]">
               <img
                 src={card.src}
@@ -25,7 +25,7 @@ const ScrollingCards = ({ cards, containerWidth = "1335px", leftPosition = "125p
                 {card.number}
               </div>
             </div>
-            <Link to={card.link}>
+            <Link to={card.link} onClick={window.scrollY} >
               <p 
                 style={{ background: "#131C23", color: "#fff" }} 
                 className="flex justify-around py-4 lg:w-[300px] md:w-[280px] w-[250px] absolute bottom-8 sm:bottom-10 mt-4 text-sm sm:text-md font-semibold"
