@@ -168,6 +168,7 @@ const Aboutpage = () => {
             <CapabilityCard
               title="CNC turning, milling, and drilling operations"
               imageSrc="public/Box-1.png"
+              des="Our advanced CNC capabilities enable us to execute projects with precision, speed, and efficiency—delivering high-quality results across every scale."
               imageAlt="CNC turning"
               reverse={false}
               className="w-full max-w-[800px]"
@@ -177,6 +178,7 @@ const Aboutpage = () => {
             <CapabilityCard
               title="Custom machining tailored to client specifications"
               imageSrc="public/Box-1 (1).png"
+              des="With over 15 years of proven expertise, we specialize in developing customized solutions that meet unique client requirements while maintaining the highest standards of accuracy."
               imageAlt="Custom machining"
               reverse={true}
               className="w-full max-w-[800px]"
@@ -186,6 +188,7 @@ const Aboutpage = () => {
             <CapabilityCard
               title="Small-batch and large-scale production runs"
               imageSrc="public/Box-1 (2).png"
+              des="Whether it’s a one-off prototype or large-scale production, our team has successfully executed 1,000+ projects across the Kingdom—adapting to every challenge with reliability and consistency."
               imageAlt="Production runs"
               reverse={false}
               className="w-full max-w-[800px]"
@@ -195,7 +198,7 @@ const Aboutpage = () => {
           {/* Contact Button */}
           <div className="flex pt-20 justify-center">
                 <button 
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {navigate("/contact"),window.scrollTo({top:0})}}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >

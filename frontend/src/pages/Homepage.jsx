@@ -14,11 +14,11 @@ const PRIMARY_DARK = "#131C23";
 const heroImages = ["public/homeimage.png", "public/hero1.jpg"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg" },
+  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg", link:"/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg", link:"/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg", link:"/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg", link:"/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg", link:"/service?service=Cutting" },
 ];
 
 const statsData = [
@@ -32,17 +32,17 @@ const contactData = [
   {
     title: "There are many variations",
     phone: "123 456 7890",
-    email: "Info@loremispum.com"
+    email: "pinnaxsa.setup@gmail.com"
   },
   {
     title: "There are many variations",
     phone: "123 456 7890",
-    email: "Info@loremispum.com"
+    email: "pinnaxsa.setup@gmail.com"
   },
   {
     title: "There are many variations",
     phone: "123 456 7890",
-    email: "Info@loremispum.com"
+    email: "pinnaxsa.setup@gmail.com"
   }
 ];
 
@@ -235,7 +235,9 @@ const Homepage = () => {
                 alt="Group 4"
               />
             </div>
-            <div className="flex flex-col gap-4 items-center lg:items-start">
+            <div className="flex relative flex-col gap-4 items-center lg:items-start">
+              {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
+              <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+917356384946">Tel: 7410852963</a>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
                 Together We Grow
               </h1>
@@ -247,7 +249,7 @@ const Homepage = () => {
 
               <div className="flex items-center">
                 <button 
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {navigate("/contact"),window.scrollTo({top:0})}}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >
@@ -376,9 +378,9 @@ const Homepage = () => {
                 ))}
               </div>
                         
-              <div className="flex justify-center lg:flex lg:justify-center">
+              <div className="flex justify-center lg:flex lg:justify-start">
                 <button 
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {navigate("/contact");window.scrollTo({top:0})}}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >

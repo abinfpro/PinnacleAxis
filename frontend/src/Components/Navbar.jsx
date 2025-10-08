@@ -117,9 +117,10 @@ const Navbar = () => {
 
                     {/* Get in Touch Button */}
                     <a
-                        href="#contact"
-                        className="hidden md:hidden lg:block sm:inline-flex items-center justify-center py-[12px] sm:py-[15px] px-4 sm:w-[160px] lg:w-[180px] border border-transparent text-[16px] sm:text-[18px] lg:text-[20px] font-medium rounded-none shadow-sm text-white transition duration-150"
+                        href="/contact"
+                        className="hidden md:hidden lg:block sm:inline-flex items-center justify-center py-[19px] px-4 sm:w-[160px] lg:w-[180px] border border-transparent text-[16px] sm:text-[18px] lg:text-[20px] font-medium rounded-none shadow-xl text-white transition duration-150"
                         style={{ backgroundColor: ACCENT_ORANGE }}
+                        //  onClick={()=>{closeMenus();window.scrollY()}}
                     >
                         Get in Touch
                     </a>

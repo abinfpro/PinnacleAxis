@@ -15,26 +15,26 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg" },
+  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg", link:"/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg", link:"/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg", link:"/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg", link:"/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg", link:"/service?service=Cutting" },
 ];
 
 const serviceCards = [
   {
-    imageSrc: "public/serimg.png",
+    imageSrc: "public/serimg.jpg",
     imageAlt: "Accuracy and Reliability",
     title: "Accuracy and Reliability for Complex Engineering Needs"
   },
   {
-    imageSrc: "public/serimg1.png",
+    imageSrc: "public/serimg1.jpg",
     imageAlt: "Cost-Effective Solutions",
     title: "Cost-Effective Solutions Without Compromising Quality"
   },
   {
-    imageSrc: "public/serimg2.png",
+    imageSrc: "public/serimg2.jpg",
     imageAlt: "On-Time Delivery",
     title: "On-Time Delivery for Critical Projects"
   }
@@ -218,7 +218,7 @@ const Servicespage = () => {
               </p>
               <div className="flex justify-center hidden md:block  md:flex md:justify-center">
                 <button 
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {navigate("/contact"),window.scrollTo({top:0})}}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >
@@ -298,7 +298,7 @@ const Servicespage = () => {
               imageSrc={card.imageSrc}
               imageAlt={card.imageAlt}
               title={card.title}
-              className="w-full  lg:w-auto"
+              className="w-full industrial-card-image lg:w-auto"
               service="true"
             />
           ))}

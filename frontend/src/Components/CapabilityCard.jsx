@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CapabilityCard = ({ 
   title, 
+  des,
   imageSrc, 
   imageAlt, 
   reverse = false,
@@ -15,12 +16,7 @@ const CapabilityCard = ({
           <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-3">
             {title}
           </h3>
-          <a
-            href="#"
-            className="lg:flex sm:hidden hidden items-center text-sm font-medium text-gray-700 hover:text-red-500 transition"
-          >
-            Yours More <ArrowRight className="w-4 h-4 ml-1" />
-          </a>
+          <p className='text-black'>{des}</p>
         </div>
       </div>
       <div className="flex-1">

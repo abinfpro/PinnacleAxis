@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ScrollingCards = ({ cards, containerWidth = "1335px", leftPosition = "125px", topPosition = "345px" }) => {
   return (
@@ -24,7 +25,7 @@ const ScrollingCards = ({ cards, containerWidth = "1335px", leftPosition = "125p
                 {card.number}
               </div>
             </div>
-            <div>
+            <Link to={card.link}>
               <p 
                 style={{ background: "#131C23", color: "#fff" }} 
                 className="flex justify-around py-4 lg:w-[300px] md:w-[280px] w-[250px] absolute bottom-8 sm:bottom-10 mt-4 text-sm sm:text-md font-semibold"
@@ -44,7 +45,7 @@ const ScrollingCards = ({ cards, containerWidth = "1335px", leftPosition = "125p
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </p>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

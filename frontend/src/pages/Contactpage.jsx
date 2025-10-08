@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { InboxIcon, Phone } from "lucide-react";
+import { InboxIcon, Phone, Instagram,Twitter,Facebook } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ContactCard from "../Components/ContactCard";
@@ -173,7 +173,7 @@ const Contactpage = () => {
                     <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z" />
                   </svg>
                   <span className="text-gray-200 text-sm">
-                    demo@pinnacleaxis.com
+                  pinnaxsa.setup@gmail.com
                   </span>
                 </div>
                 {/* Address */}
@@ -197,17 +197,17 @@ const Contactpage = () => {
                 {/* Icons (Twitter, Dribbble/Globe, LinkedIn) - SVGs remain placeholders */}
                 <div className="w-9 h-9 rounded-full bg-white bg-opacity-10 flex items-center justify-center cursor-pointer hover:bg-opacity-20 transition">
                   <svg className="w-4 h-4" fill="white" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.96-3.06 1.18-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.14 2.14 4-.79-.02-1.53-.24-2.18-.6v.06c0 2.33 1.66 4.28 3.86 4.72-.4.11-.83.17-1.27.17-.31 0-.61-.03-.91-.08.62 1.93 2.42 3.33 4.55 3.37-1.67 1.31-3.77 2.09-6.05 2.09-.39 0-.78-.02-1.17-.07 2.18 1.4 4.77 2.21 7.56 2.21 9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.7 1.8-1.56 2.46-2.55z" />
+                    <Instagram size={24} color="#E4405F" />
                   </svg>
                 </div>
                 <div className="w-9 h-9 rounded-full bg-white bg-opacity-10 flex items-center justify-center cursor-pointer hover:bg-opacity-20 transition">
                   <svg className="w-4 h-4" fill="white" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10" />
+                  <Twitter size={24} color="#E4405F" />
                   </svg>
                 </div>
                 <div className="w-9 h-9 rounded-full bg-white bg-opacity-10 flex items-center justify-center cursor-pointer hover:bg-opacity-20 transition">
                   <svg className="w-4 h-4" fill="white" viewBox="0 0 24 24">
-                    <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z" />
+                  <Facebook size={24} color="#E4405F" />
                   </svg>
                 </div>
               </div>
@@ -398,17 +398,17 @@ const Contactpage = () => {
           {
             title: "There are many variations",
             phone: "123 456 7890",
-            email: "Info@loremispum.com"
+            email: "pinnaxsa.setup@gmail.com"
           },
           {
             title: "There are many variations",
             phone: "123 456 7890",
-            email: "Info@loremispum.com"
+            email: "pinnaxsa.setup@gmail.com"
           },
           {
             title: "There are many variations",
             phone: "123 456 7890",
-            email: "Info@loremispum.com"
+            email: "pinnaxsa.setup@gmail.com"
           }
         ]}
         showImage={true}
