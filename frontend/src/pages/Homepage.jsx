@@ -31,19 +31,10 @@ const statsData = [
 const contactData = [
   {
     title: "There are many variations",
-    phone: "123 456 7890",
-    email: "pinnaxsa.setup@gmail.com"
+    phone: "+966 556207221",
+    email: "info@pinnaxsa.com"
   },
-  {
-    title: "There are many variations",
-    phone: "123 456 7890",
-    email: "pinnaxsa.setup@gmail.com"
-  },
-  {
-    title: "There are many variations",
-    phone: "123 456 7890",
-    email: "pinnaxsa.setup@gmail.com"
-  }
+
 ];
 
 const Homepage = () => {
@@ -237,7 +228,7 @@ const Homepage = () => {
             </div>
             <div className="flex relative flex-col gap-4 items-center lg:items-start">
               {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
-              <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+917356384946">Tel: 7410852963</a>
+              <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+966 556207221">Tel: +966 556207221</a>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
                 Together We Grow
               </h1>
@@ -287,7 +278,7 @@ const Homepage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1589px] z-2" src="public/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1618px] z-2" src="public/Group1.svg" alt="" />
         <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="public/Group10.svg" alt="" />
       </div>
 

@@ -26,22 +26,22 @@ const Footer = ({tag}) => {
           {/* Navigation Links */}
           <div>
             <h5 className="font-medium text-[18px] sm:text-[22px] mb-4">
-              Product
+              Explore
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Features
+                <a href="/" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Integration
+                <a href="/about" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Pricing
+                <a href="/contact" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Contact
                 </a>
               </li>
             </ul>
@@ -50,32 +50,32 @@ const Footer = ({tag}) => {
           {/* Company Links */}
           <div>
             <h5 className="font-medium text-[18px] sm:text-[22px] mb-4">
-              Company
+              Services
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  About Us
+                <a href="/service?service=machining" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Machining 
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Blog
+                <a href="/service?service=Fabrication" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Steel Fabrication
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                  Careers
+                <a href="/service?service=Rubber" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Rubber and PU
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Customers
+                <a href="/service?service=Laser" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Laser and CNC
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Brand
+                <a href="/service?service=Cutting" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Cutting, Bending & Rolling
                 </a>
               </li>
             </ul>
@@ -84,20 +84,20 @@ const Footer = ({tag}) => {
           {/* Resources */}
           <div>
             <h5 className="font-medium text-[18px] sm:text-[22px] mb-4">
-              Resources
+              More Details
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Community
+                <a href="tel:+966 556207221" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                Tel: +966 556207221
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Contact
+                info@pinnaxsa.com
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
                 DPA
                  </a>
@@ -106,7 +106,7 @@ const Footer = ({tag}) => {
                 <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
                 Terms of service
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

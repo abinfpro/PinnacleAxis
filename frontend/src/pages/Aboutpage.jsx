@@ -104,7 +104,7 @@ const Aboutpage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[300px] lg:top-[355px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[800px] lg:bottom-[1249px] z-2" src="public/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[800px] lg:bottom-[1277px] z-2" src="public/Group1.svg" alt="" />
       </div>
 
       {/* Mission Section */}
@@ -126,8 +126,8 @@ const Aboutpage = () => {
           <div className="flex items-center gap-2">
             <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
             At Pinnacle Axis, our mission is to transform challenges into opportunities and visions into reality. 
-            We are committed to delivering innovative, precise, and reliable solutions that help our clients succeed.
-             Guided by trust, expertise, and long-term partnerships, we ensure every project reflects our dedication to excellence and client satisfaction.</p>
+            We are committed to delivering innovative, precise, and reliable solutions that help our clients succeed. 
+            Guided by trust, expertise, and long-term partnerships, we ensure every project reflects our dedication to excellence and client satisfaction.</p>
           </div>
         </div>
       </SectionWithImage>
@@ -140,15 +140,15 @@ const Aboutpage = () => {
           </div>
           <div className="flex items-center">
             <div className="w-full lg:w-[592px] flex flex-col gap-2 lg:gap-[10px] text-start">
-              <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Our Mission</p>
+              <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Our Vision</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
-                Our Mission
+              Our Vision
               </h2>
               <div className="flex items-center gap-2">
                 <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
-                  At Pinnacle Axis, our mission is to deliver world-class industrial solutions with precision, innovation, and reliability.
-                  We aim to support industries by providing high-quality machining, fabrication, and engineering services that empower growth and long-term success.
-                </p>
+                Our vision is to be the Kingdom’s most trusted partner in engineering and project deliver where innovation meets reliability. 
+                We aim to set new benchmarks in quality and performance, driving growth for our clients while continuously raising our own standards through self-awareness and improvement.
+                  </p>
               </div>
             </div>
           </div>

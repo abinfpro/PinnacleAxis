@@ -67,13 +67,13 @@ const Navbar = () => {
                             {isServicesOpen && (
                                 <div className="absolute left-0 mt-0 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
                                     <Link to="/service?service=machining" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => {setIsServicesOpen(false);window.scrollY()}}>
-                                    Machining Division
+                                    Machining 
                                     </Link>
                                     <Link to="/service?service=Fabrication" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => {setIsServicesOpen(false);window.scrollY()}}>
-                                    Steel Fabrication Division
+                                    Steel Fabrication 
                                     </Link>
                                     <Link to="/service?service=Rubber" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => {setIsServicesOpen(false);window.scrollY()}}>
-                                    Rubber and PU Division
+                                    Rubber and PU 
                                     </Link>
                                     <Link to="/service?service=Laser" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => {setIsServicesOpen(false);window.scrollY()}}>
                                     Laser and CNC 
@@ -188,13 +188,13 @@ const Navbar = () => {
                                 // Center the dropdown content on mobile
                                 <div className="mt-2 w-full bg-white border-t border-gray-200 shadow-inner z-50">
                                     <Link to="/service?service=machining" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={()=>{closeMenus;window.scrollY()}}>
-                                    Machining Division
+                                    Machining 
                                     </Link>
                                     <Link to="/service?service=Fabrication" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={()=>{closeMenus;window.scrollY()}}>
-                                    Steel Fabrication Division
+                                    Steel Fabrication 
                                     </Link>
                                     <Link to="/service?service=Rubber" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={()=>{closeMenus;window.scrollY()}}>
-                                    Rubber and PU Division
+                                    Rubber and PU 
                                     </Link>
                                     <Link to="/service?service=Laser" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={()=>{closeMenus;window.scrollY()}}>
                                     Laser and CNC 
