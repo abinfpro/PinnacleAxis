@@ -230,7 +230,7 @@ const Homepage = () => {
               {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
               <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+966 556207221">Tel: +966 556207221</a>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
-                Abin
+                Together We Grow
               </h1>
               <p className="font-normal leading-[24px] sm:leading-[28px] text-[18px] sm:text-[20px] lg:text-[22px] text-center lg:text-start">
                 At Pinnacle Axis, excellence is more than a promise, it's a way
