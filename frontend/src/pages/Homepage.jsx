@@ -14,11 +14,11 @@ const PRIMARY_DARK = "#131C23";
 const heroImages = ["/homeimage.png", "/hero1.jpg"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "/hero1.jpg", link:"/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.jpg", link:"/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.jpg", link:"/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.jpg", link:"/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.jpg", link:"/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/hero1.jpg", link: "/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.jpg", link: "/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.jpg", link: "/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.jpg", link: "/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.jpg", link: "/service?service=Cutting" },
 ];
 
 const statsData = [
@@ -228,8 +228,12 @@ const Homepage = () => {
             </div>
             <div className="flex relative flex-col gap-4 items-center lg:items-start">
               {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
-              <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+966 556207221">Tel: +966 556207221</a>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
+              <a
+                href="tel:+966 556207221"
+                className="bg-[#131c23] text-white font-medium z-10 p-4 md:p-6 text-sm md:text-lg w-64 md:w-80 fixed md:absolute bottom-4 md:bottom-[-160px] right-4 md:right-[-90px] rounded-lg shadow-lg text-centertransition-all">
+                Tel: +966 556207221
+              </a>
+              <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
                 Together We Grow
               </h1>
               <p className="font-normal leading-[24px] sm:leading-[28px] text-[18px] sm:text-[20px] lg:text-[22px] text-center lg:text-start">
@@ -239,21 +243,21 @@ const Homepage = () => {
               </p>
 
               <div className="flex items-center">
-                <button 
-                  onClick={() => {navigate("/contact"),window.scrollTo({top:0})}}
+                <button
+                  onClick={() => { navigate("/contact"), window.scrollTo({ top: 0 }) }}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >
                   Contact Us
                 </button>
                 <div
-                  style={{ 
-                    backgroundColor: "#EA4D33", 
-                    display: "flex", 
-                    alignItems: "center", 
-                    justifyContent: "center" 
+                  style={{
+                    backgroundColor: "#EA4D33",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
-                  className="sm:w-[45px] w-[30px] h-[35px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
+                  className="w-[37px] h-[37px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
                 >
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform -rotate-360"
@@ -278,13 +282,13 @@ const Homepage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1618px] z-2" src="/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1573px] z-2" src="/Group1.svg" alt="" />
         <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="/Group10.svg" alt="" />
       </div>
 
       {/* Section 2: Industrial Expertise */}
-      <section 
-        style={{ background: "#E1E6E9", }} 
+      <section
+        style={{ background: "#E1E6E9", }}
         className="relative py-8 sm:py-12 lg:py-16 bg-white md:h-[774px] lg:h-[700px] h-[836px] lg:ml-[60px] lg:mt-[60px] "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,7 +310,7 @@ const Homepage = () => {
                 At Pinnacle Axis, we deliver precision, reliability, and innovation across every division.
               </p>
               <p className="font-normal text-lg sm:text-xl lg:text-[22px]">
-                With over 15 years of proven expertise and 1,000+ successful projects, our services are designed to meet 
+                With over 15 years of proven expertise and 1,000+ successful projects, our services are designed to meet
                 diverse industrial needs with world-class quality.
               </p>
             </div>
@@ -325,7 +329,7 @@ const Homepage = () => {
           <span className="text-[18px] !text-[60px] sm:!text-[24px] md:!text-[105px] lg:!text-[150px] w-full font-medium outline-text">since 2005</span>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-[50px] space-y-6 lg:space-y-0 lg:space-x-12 mt-8 lg:mt-10">
             <div className="w-auto h-[100px] lg:block hidden flex items-end">
-            <img src="/arrow.svg" className=" w-32 sm:w-40" alt="" />
+              <img src="/arrow.svg" className=" w-32 sm:w-40" alt="" />
             </div>
             <div className="lg:text-left max-w-[845px] flex flex-col gap-4">
               <span style={{ color: "#EA4D33", fontWeight: "500", fontSize: "18px", sm: "21px" }}>Proven Expertise</span>
@@ -358,8 +362,8 @@ const Homepage = () => {
             </div>
             <div className="flex flex-col gap-8 lg:gap-[61px]">
               <p className="font-normal text-lg sm:text-xl lg:text-[22px]">
-                Pinnacle Axis is the trusted choice for industries seeking reliable, innovative, and high-quality solutions. 
-                With proven expertise in steel fabrication, machining, and industrial services, we deliver precision and durability in every project. 
+                Pinnacle Axis is the trusted choice for industries seeking reliable, innovative, and high-quality solutions.
+                With proven expertise in steel fabrication, machining, and industrial services, we deliver precision and durability in every project.
                 Our strong values of honesty, respect, and continuous improvement make us a partner you can grow with.
               </p>
 
@@ -368,23 +372,23 @@ const Homepage = () => {
                   <Counter key={index} {...stat} />
                 ))}
               </div>
-                        
+
               <div className="flex justify-center lg:flex lg:justify-start">
-                <button 
-                  onClick={() => {navigate("/contact");window.scrollTo({top:0})}}
+                <button
+                  onClick={() => { navigate("/contact"); window.scrollTo({ top: 0 }) }}
                   style={{ borderColor: "#EA4D33" }}
                   className="px-4 py-2 backdrop-blur text-[10px] sm:text-[18px] lg:text-[22px] font-normal border-3 hover:bg-opacity-10 transition"
                 >
                   Contact Us
                 </button>
                 <div
-                  style={{ 
-                    backgroundColor: "#EA4D33", 
-                    display: "flex", 
-                    alignItems: "center", 
-                    justifyContent: "center" 
+                  style={{
+                    backgroundColor: "#EA4D33",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
-                  className="sm:w-[45px] w-[30px] h-[35px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
+                  className="w-[37px] h-[37px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
                 >
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform -rotate-360"
@@ -400,14 +404,14 @@ const Homepage = () => {
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
                 </div>
-              </div>        
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 5: Contact Us */}
-      <ContactCard 
+      <ContactCard
         title="Contact Us"
         contacts={contactData}
         showImage={true}

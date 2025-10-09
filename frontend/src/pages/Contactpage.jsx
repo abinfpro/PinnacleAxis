@@ -369,7 +369,7 @@ const Contactpage = () => {
                     alignItems: "center", 
                     justifyContent: "center" 
                   }}
-                  className="sm:w-[45px] w-[30px] h-[35px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
+                  className="w-[37px] h-[37px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
                 >
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform -rotate-360"

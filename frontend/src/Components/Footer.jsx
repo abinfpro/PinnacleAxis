@@ -18,7 +18,7 @@ const Footer = ({tag}) => {
               alt="Pinnacle Axis Logo"
               className="h-8 sm:h-10 mb-4 filter brightness-150"
             />
-            <p className="font-medium text-[11px] sm:text-[13px] max-w-xs">
+            <p className="font-medium text-[15px] md:text-[18px] max-w-xs">
               Together We Grow. <br /> Delivering trusted industrial services with precision and care.
             </p>
           </div>
@@ -30,17 +30,17 @@ const Footer = ({tag}) => {
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/about" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/contact" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Contact
                 </a>
               </li>
@@ -54,27 +54,27 @@ const Footer = ({tag}) => {
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/service?service=machining" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/service?service=machining" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Machining 
                 </a>
               </li>
               <li>
-                <a href="/service?service=Fabrication" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/service?service=Fabrication" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Steel Fabrication
                 </a>
               </li>
               <li>
-                <a href="/service?service=Rubber" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/service?service=Rubber" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Rubber and PU
                 </a>
               </li>
               <li>
-                <a href="/service?service=Laser" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/service?service=Laser" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Laser and CNC
                 </a>
               </li>
               <li>
-                <a href="/service?service=Cutting" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="/service?service=Cutting" className="hover:text-white text-[16px] sm:text-[17px] font-normal transition">
                 Cutting, Bending & Rolling
                 </a>
               </li>
@@ -88,12 +88,12 @@ const Footer = ({tag}) => {
             </h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="tel:+966 556207221" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="tel:+966 556207221" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 Tel: +966 556207221
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
+                <a href="#" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
                 info@pinnaxsa.com
                 </a>
               </li>

@@ -81,18 +81,18 @@ const Aboutpage = () => {
           <img
             src="/Rectangleabout.png"
             alt="About Us Background"
-            className="w-full lg:h-full h-[200px] object-cover"
+            className="w-full lg:h-full h-[380px] object-cover"
           />
         </div>
 
         {/* Overlay Content */}
-        <div className="absolute inset-0 bg-opacity-50 flex justify-center sm:mt-16 lg:mt-25">
+        <div className="absolute inset-0 bg-opacity-50 flex justify-center">
           <div className="flex gap-4 lg:gap-7  text-white w-full max-w-4xl px-4 sm:px-8 text-center">
-            <div className="flex flex-col gap-4 lg:items-center">
+            <div className="flex flex-col justify-center gap-4 md:justify-center md:items-center">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
                 About Us
               </h1>
-              <p className="lg:font-normal leading-[18px] lg:leading-[28px] text-[18px] lg:text-[22px] text-center">
+              <p className="lg:font-normal leading-[18px] leading-[25px] lg:leading-[28px] text-[18px] lg:text-[22px] text-center">
                 At Pinnacle Axis, excellence is more than a promise, it's a way of working. 
                 we take pride in transforming challenges into opportunities
               </p>
@@ -104,7 +104,7 @@ const Aboutpage = () => {
       {/* Decorative Elements */}
       <div className="hidden lg:block">
         <img className="absolute right-0 top-[300px] lg:top-[355px] z-3" src="/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[800px] lg:bottom-[1277px] z-2" src="/Group1.svg" alt="" />
+        <img className="absolute right-15 bottom-[800px] lg:bottom-[1233px] z-2" src="/Group1.svg" alt="" />
       </div>
 
       {/* Mission Section */}
@@ -211,7 +211,7 @@ const Aboutpage = () => {
                     alignItems: "center", 
                     justifyContent: "center" 
                   }}
-                  className="sm:w-[45px] w-[30px] h-[35px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
+                  className="w-[37px] h-[37px] md:w-[48px] md:h-[48px] lg:w-[54px] lg:h-[54px]"
                 >
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform -rotate-360"

@@ -212,11 +212,11 @@ const Servicespage = () => {
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-opacity-50 flex justify-center mt-[15px] lg:mt-25">
           <div className="flex gap-4 lg:gap-7 text-white w-full max-w-4xl px-4 sm:px-8 text-center">
-            <div className="flex flex-col gap-4 items-center">
-              <h1 className=" text-2xl md:text-[48px] font-semibold tracking-wider">
+            <div className="flex flex-col gap-4 justify-center items-center">
+              <h1 className=" text-3xl md:text-[48px] font-semibold tracking-wider">
               {serviceData.title}
               </h1>
-              <p className="font-medium leading-[20px] md:leading-[28px] lg:leading-[28px] text-[16px] md:text-[20px] lg:text-[22px] text-center">
+              <p className="font-medium leading-[25px] md:leading-[28px] lg:leading-[28px] text-[18px] md:text-[20px] lg:text-[22px] text-center">
             {serviceData.des}
               </p>
               <div className="flex justify-center hidden md:block  md:flex md:justify-center">
