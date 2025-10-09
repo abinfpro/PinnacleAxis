@@ -11,14 +11,14 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 // Data Definitions
-const heroImages = ["public/homeimage.png", "public/hero1.jpg"];
+const heroImages = ["/homeimage.png", "/hero1.jpg"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "public/hero1.jpg", link:"/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "public/experties.jpg", link:"/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "public/experties1.jpg", link:"/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "public/experties2.jpg", link:"/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "public/experties.jpg", link:"/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/hero1.jpg", link:"/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.jpg", link:"/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.jpg", link:"/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.jpg", link:"/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.jpg", link:"/service?service=Cutting" },
 ];
 
 const statsData = [
@@ -222,7 +222,7 @@ const Homepage = () => {
             <div className="w-[200px] lg:block hidden sm:w-[300px] lg:w-[400px] xl:w-[381px] h-[60px] sm:h-[80px] lg:h-[100px] xl:h-[106px] flex-shrink-0">
               <img
                 className="w-auto h-full bg-transparent"
-                src="public/heroIcon.png"
+                src="/heroIcon.png"
                 alt="Group 4"
               />
             </div>
@@ -230,7 +230,7 @@ const Homepage = () => {
               {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
               <a className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]" href="tel:+966 556207221">Tel: +966 556207221</a>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
-                Together We Grow
+                Abin
               </h1>
               <p className="font-normal leading-[24px] sm:leading-[28px] text-[18px] sm:text-[20px] lg:text-[22px] text-center lg:text-start">
                 At Pinnacle Axis, excellence is more than a promise, it's a way
@@ -277,9 +277,9 @@ const Homepage = () => {
 
       {/* Decorative Elements */}
       <div className="hidden lg:block">
-        <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1618px] z-2" src="public/Group1.svg" alt="" />
-        <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="public/Group10.svg" alt="" />
+        <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="/Group2.svg" alt="" />
+        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1618px] z-2" src="/Group1.svg" alt="" />
+        <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="/Group10.svg" alt="" />
       </div>
 
       {/* Section 2: Industrial Expertise */}
@@ -325,7 +325,7 @@ const Homepage = () => {
           <span className="text-[18px] !text-[60px] sm:!text-[24px] md:!text-[105px] lg:!text-[150px] w-full font-medium outline-text">since 2005</span>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-[50px] space-y-6 lg:space-y-0 lg:space-x-12 mt-8 lg:mt-10">
             <div className="w-auto h-[100px] lg:block hidden flex items-end">
-            <img src="public/arrow.svg" className=" w-32 sm:w-40" alt="" />
+            <img src="/arrow.svg" className=" w-32 sm:w-40" alt="" />
             </div>
             <div className="lg:text-left max-w-[845px] flex flex-col gap-4">
               <span style={{ color: "#EA4D33", fontWeight: "500", fontSize: "18px", sm: "21px" }}>Proven Expertise</span>
@@ -411,7 +411,7 @@ const Homepage = () => {
         title="Contact Us"
         contacts={contactData}
         showImage={true}
-        imageSrc="./public/contact.jpg"
+        imageSrc="/contact.jpg"
         imageAlt="Contact Banner"
       />
 

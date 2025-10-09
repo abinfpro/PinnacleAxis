@@ -403,7 +403,7 @@ const Contactpage = () => {
           },
         ]}
         showImage={true}
-        imageSrc="public/contact.jpg"
+        imageSrc="/contact.jpg"
         imageAlt="Contact Banner"
       />
 

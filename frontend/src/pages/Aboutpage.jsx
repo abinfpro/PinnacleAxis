@@ -79,7 +79,7 @@ const Aboutpage = () => {
       <section className="slider-wrapper relative">
         <div>
           <img
-            src="public/Rectangleabout.png"
+            src="/Rectangleabout.png"
             alt="About Us Background"
             className="w-full lg:h-full h-[200px] object-cover"
           />
@@ -103,8 +103,8 @@ const Aboutpage = () => {
 
       {/* Decorative Elements */}
       <div className="hidden lg:block">
-        <img className="absolute right-0 top-[300px] lg:top-[355px] z-3" src="public/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[800px] lg:bottom-[1277px] z-2" src="public/Group1.svg" alt="" />
+        <img className="absolute right-0 top-[300px] lg:top-[355px] z-3" src="/Group2.svg" alt="" />
+        <img className="absolute right-15 bottom-[800px] lg:bottom-[1277px] z-2" src="/Group1.svg" alt="" />
       </div>
 
       {/* Mission Section */}
@@ -112,7 +112,7 @@ const Aboutpage = () => {
         backgroundColor="#E1E6E9"
         margin="-90px 0px 0px 0px"
         height="auto"
-        imageSrc="public/Rectangle34.png"
+        imageSrc="/Rectangle34.png"
         imageAlt="Mission Image"
         imagePosition="right"
         imageWidth="491px"
@@ -136,7 +136,7 @@ const Aboutpage = () => {
       <section className="py-8 sm:py-12 lg:py-46">
         <div className="max-w-[1430px] mx-auto px-4 flex flex-col lg:flex-row justify-between gap-[30px] text-center">
           <div style={{ backgroundColor: "black" }} className="w-[100%] h-[250px] lg:w-[741px] lg:h-[350px] mb-6 lg:mb-0">
-            <img className="w-full h-full object-cover" src="public/Rectangle 3462.png" alt="" />
+            <img className="w-full h-full object-cover" src="/Rectangle 3462.png" alt="" />
           </div>
           <div className="flex items-center">
             <div className="w-full lg:w-[592px] flex flex-col gap-2 lg:gap-[10px] text-start">
@@ -167,7 +167,7 @@ const Aboutpage = () => {
             {/* Card 1 */}
             <CapabilityCard
               title="CNC turning, milling, and drilling operations"
-              imageSrc="public/Box-1.png"
+              imageSrc="/Box-1.png"
               des="Our advanced CNC capabilities enable us to execute projects with precision, speed, and efficiency—delivering high-quality results across every scale."
               imageAlt="CNC turning"
               reverse={false}
@@ -177,7 +177,7 @@ const Aboutpage = () => {
             {/* Card 2 */}
             <CapabilityCard
               title="Custom machining tailored to client specifications"
-              imageSrc="public/Box-1 (1).png"
+              imageSrc="/Box-1 (1).png"
               des="With over 15 years of proven expertise, we specialize in developing customized solutions that meet unique client requirements while maintaining the highest standards of accuracy."
               imageAlt="Custom machining"
               reverse={true}
@@ -187,7 +187,7 @@ const Aboutpage = () => {
             {/* Card 3 */}
             <CapabilityCard
               title="Small-batch and large-scale production runs"
-              imageSrc="public/Box-1 (2).png"
+              imageSrc="/Box-1 (2).png"
               des="Whether it’s a one-off prototype or large-scale production, our team has successfully executed 1,000+ projects across the Kingdom—adapting to every challenge with reliability and consistency."
               imageAlt="Production runs"
               reverse={false}
@@ -261,7 +261,7 @@ const Aboutpage = () => {
             <div 
               className="lg:w-[870px] lg:h-[420px] w-[100%] h-[350px] relative z-3 lg:right-[-100px] lg:bottom-[-150px] mt-6 lg:mt-0"
             >
-              <img className="w-full lg:w-full lg:h-full h-full object-cover" src="public/Rectangle34.png" alt="" />
+              <img className="w-full lg:w-full lg:h-full h-full object-cover" src="/Rectangle34.png" alt="" />
             </div>
           </div>
         </div>

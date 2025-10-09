@@ -14,7 +14,7 @@ const Footer = ({tag}) => {
           {/* Footer Logo/Mission */}
           <div className="col-span-2 md:col-span-2">
             <img
-              src="public/heroIcon.png"
+              src="/heroIcon.png"
               alt="Pinnacle Axis Logo"
               className="h-8 sm:h-10 mb-4 filter brightness-150"
             />
@@ -112,7 +112,7 @@ const Footer = ({tag}) => {
         </div>
 
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-700 text-center text-xs text-gray-500">
-          &copy; 2024 Pinnacle Axis. All rights reserved. |{" "}
+          &copy; 2025 Pinnacle Axis. All rights reserved. |{" "}
           <a href="#" className="hover:text-white transition">
             Privacy Policy
           </a>

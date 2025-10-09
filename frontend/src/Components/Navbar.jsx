@@ -21,7 +21,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="relative flex items-center space-x-2">
                     <img
-                        src="public/Group 4.png"
+                        src="/Group 4.png"
                         alt="Pinnacle Axis Logo"
                         className="h-6 sm:h-8 md:h-10"
                     />

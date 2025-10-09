@@ -8,7 +8,7 @@ const ContactCard = ({
   contacts = [],
   className = "",
   showImage = true,
-  imageSrc = "public/contact.jpg",
+  imageSrc = "/contact.jpg",
   imageAlt = "Contact Banner",
   tag
 }) => {
