@@ -18,9 +18,9 @@ const SectionWithImage = ({
       style={{ 
         background: backgroundColor, 
       }} 
-      className={`py-8 sm:py-12 lg:h-[540px] ${tag ? "md:h-[500px] h-[850px] lg:mt-[10px] lg:h-[650px]" : ""} h-[400px] lg:py-16 lg:mt-[-90px] lg:ml-[55px] bg-white ${className}`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      className={`py-8 sm:py-12 lg:h-[540px] ${tag ? "md:h-[500px] h-[800px] lg:mt-[10px] lg:h-[650px]" : ""} h-[400px] lg:py-16 lg:mt-[60px] lg:ml-[55px] bg-white ${className}`}>
+      <div className="max-w-7xl relative mx-auto px-4 sm:px-6 lg:px-8">
+      <img className="absolute hidden xl:block right-[-95px] top-[-190px]" src="/Group2.svg" alt="" />
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start">
           {/* Content */}
           <div className="w-full lg:w-auto flex-1">

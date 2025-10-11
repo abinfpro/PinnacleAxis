@@ -6,7 +6,7 @@ const PRIMARY_DARK = "#131C23";
 const Footer = ({tag}) => {
   return (
     <footer
-      className={`text-white w-full lg:pt-60 pt-10`}
+      className={`text-white w-full lg:pt-60 pt-10 pb-10`}
       style={{ backgroundColor: PRIMARY_DARK }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +14,7 @@ const Footer = ({tag}) => {
           {/* Footer Logo/Mission */}
           <div className="col-span-2 md:col-span-2">
             <img
-              src="/heroIcon.png"
+              src="/heroIcon.webp"
               alt="Pinnacle Axis Logo"
               className="h-8 sm:h-10 mb-4 filter brightness-150"
             />
@@ -97,16 +97,6 @@ const Footer = ({tag}) => {
                 info@pinnaxsa.com
                 </a>
               </li>
-              {/* <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                DPA
-                 </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[20px] font-normal transition">
-                Terms of service
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

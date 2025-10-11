@@ -13,10 +13,7 @@ const PRIMARY_DARK = "#131C23";
 
 // --- Custom Styles for Navbar consistency (Tailwind classes would be better) ---
 const customStyles = `
-    /* Navbar Link Hover/Active Effect (Underline) */
-     * {
-    font-family: 'Inter Display';
-  }
+
     .nav-link {
         position: relative;
         padding-bottom: 5px; /* Space for the underline */
@@ -403,7 +400,7 @@ const Contactpage = () => {
           },
         ]}
         showImage={true}
-        imageSrc="/contact.jpg"
+        imageSrc="/contact.webp"
         imageAlt="Contact Banner"
       />
 

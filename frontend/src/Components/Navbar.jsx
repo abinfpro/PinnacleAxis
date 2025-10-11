@@ -50,7 +50,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="relative flex items-center space-x-2">
                     <img
-                        src="/Group 4.png"
+                        src="/Group 4.webp"
                         alt="Pinnacle Axis Logo"
                         className="h-6 sm:h-8 md:h-10"
                     />
@@ -160,14 +160,14 @@ const Navbar = () => {
                 <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
                     <nav className="px-4 text-center py-4 space-y-4">
                         <Link
-                            className="block text-[18px] m-0 font-medium text-gray-800 hover:text-[#EA4D33] transition"
+                            className="block text-[18px] py-1 m-0 font-medium text-gray-800 hover:text-[#EA4D33] transition"
                             to="/"
                             onClick={() => { closeMenus(); window.scrollY() }}
                         >
                             Home
                         </Link>
                         <Link
-                            className="block text-[18px] m-0 font-medium text-gray-800 hover:text-[#EA4D33] transition"
+                            className="block text-[18px] py-1 m-0 font-medium text-gray-800 hover:text-[#EA4D33] transition"
                             to="/about"
                             onClick={() => { closeMenus(); window.scrollY() }}
                         >
@@ -177,31 +177,40 @@ const Navbar = () => {
                         {/* Services Dropdown - MOBILE (uses click/tap) */}
                         <div className="relative mb-0 flex flex-col items-center">
                             {/* Dropdown Trigger */}
-                            <div
-                                className="text-[18px] font-medium flex items-center cursor-pointer text-gray-800 hover:text-[#EA4D33] transition"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    setIsServicesOpen(!isServicesOpen);
-                                }}
-                            >
-                                <Link
-                                    to="/service?service=machining"
-                                    onClick={() => { closeMenus(); window.scrollTo(0, 0); }}
-                                    className="hover:text-[#EA4D33] ${isServicesOpen ? 'rotate-180' : ''} transition"
-                                >
-                                    Services
-                                </Link>
-                                <svg
-                                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </div>
+                            <div className="relative mb-0 flex flex-col items-center">
+  {/* Dropdown Trigger */}
+  <div
+    className="text-[18px] py-1 font-medium flex items-center cursor-pointer text-gray-800 hover:text-[#EA4D33] transition"
+    onClick={(e) => {
+      e.preventDefault(); // prevent default only if needed
+      setIsServicesOpen(!isServicesOpen); // toggle dropdown
+    }}
+  >
+    {/* Services text */}
+    <span
+      className="hover:text-[#EA4D33]"
+    >
+      Services
+    </span>
 
+    {/* Arrow icon */}
+    <svg
+      className={`w-4 h-4 ml-1 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+
+  {/* Dropdown menu */}
+  {isServicesOpen && (
+    <div className="mt-2 flex flex-col items-start bg-white shadow-md rounded-md w-full">
+    </div>
+  )}
+</div>
                             {/* Super Dropdown */}
                             {isServicesOpen && (
                                 <div
@@ -251,7 +260,7 @@ const Navbar = () => {
 
 
                         <Link
-                            className="block text-[18px] font-medium text-gray-800 hover:text-[#EA4D33] transition"
+                            className="block text-[18px] py-1 font-medium text-gray-800 hover:text-[#EA4D33] transition"
                             to="/contact"
                             onClick={() => { closeMenus(); window.scrollY() }}
                         >

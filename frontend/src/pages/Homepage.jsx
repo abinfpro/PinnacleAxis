@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Phone } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import HeroSection from "../Components/HeroSection";
 import Counter from "../Components/Counter";
 import ContactCard from "../Components/ContactCard";
 import ScrollingCards from "../Components/ScrollingCards";
@@ -11,14 +11,14 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 // Data Definitions
-const heroImages = ["/homeimage.png", "/hero1.jpg"];
+const heroImages = ["/homeimage.webp", "/hero1.webp"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "/hero1.jpg", link: "/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.jpg", link: "/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.jpg", link: "/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.jpg", link: "/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.jpg", link: "/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/hero1.webp", link: "/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.webp", link: "/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.webp", link: "/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.webp", link: "/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.webp", link: "/service?service=Cutting" },
 ];
 
 const statsData = [
@@ -51,10 +51,8 @@ const Homepage = () => {
 
   // Custom CSS for animations and styles
   const customStyles = `
-    * {
-      font-family: 'Inter Display';
-    }
-    
+
+
     .slider-wrapper {
       position: relative;
       width: 100%;
@@ -193,7 +191,7 @@ const Homepage = () => {
   return (
     <div
       style={{ fontFamily: "Inter, sans-serif" }}
-      className="relative bg-white text-gray-800 antialiased"
+      className=" bg-white text-gray-800 antialiased"
     >
       {/* Inject custom styles */}
       <style>{customStyles}</style>
@@ -202,6 +200,8 @@ const Homepage = () => {
 
       {/* Section 1: Hero Slider */}
       <section className="slider-wrapper relative">
+        {/* <img className="absolute right-[50px]" src="/Group2.svg" alt="" /> */}
+
         {/* Slides */}
         {heroImages.map((src, index) => (
           <div
@@ -218,21 +218,15 @@ const Homepage = () => {
 
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
-          <div className="lg:flex items-center gap-4 lg:gap-7 text-white w-full max-w-6xl px-4 sm:px-8 text-center lg:text-left">
+          <div className="lg:flex flex items-center gap-4 lg:gap-7 text-white w-full max-w-6xl px-4 sm:px-8 text-center lg:text-left">
             <div className="w-[200px] lg:block hidden sm:w-[300px] lg:w-[400px] xl:w-[381px] h-[60px] sm:h-[80px] lg:h-[100px] xl:h-[106px] flex-shrink-0">
               <img
                 className="w-auto h-full bg-transparent"
-                src="/heroIcon.png"
+                src="/heroIcon.webp"
                 alt="Group 4"
               />
             </div>
             <div className="flex relative flex-col gap-4 items-center lg:items-start">
-              {/* <div className="bg-[#131c23] absolute right-[-220px] bottom-[-165px] text-[18px] font-medium w-[330px] p-[35px]">Tel: </div> */}
-              <a
-                href="tel:+966 556207221"
-                className="bg-[#131c23] text-white font-medium z-10 p-4 md:p-6 text-sm md:text-lg w-64 md:w-80 fixed md:absolute bottom-4 md:bottom-[-160px] right-4 md:right-[-90px] rounded-lg shadow-lg text-centertransition-all">
-                Tel: +966 556207221
-              </a>
               <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-[48px] font-semibold tracking-wider">
                 Together We Grow
               </h1>
@@ -279,20 +273,29 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Decorative Elements */}
-      <div className="hidden lg:block">
-        <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="/Group2.svg" alt="" />
-        <img className="absolute right-15 bottom-[1200px] lg:bottom-[1573px] z-2" src="/Group1.svg" alt="" />
-        <img className="absolute left-24 w-[50px] top-[100px] lg:top-[1285px] z-4" src="/Group10.svg" alt="" />
-      </div>
-
-      {/* Section 2: Industrial Expertise */}
       <section
         style={{ background: "#E1E6E9", }}
         className="relative py-8 sm:py-12 lg:py-16 bg-white md:h-[774px] lg:h-[700px] h-[836px] lg:ml-[60px] lg:mt-[60px] "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start mb-8 lg:mb-10">
+          <div className="flex relative flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start mb-8 lg:mb-10">
+          <a
+  href="tel:+966556207221"
+  className="absolute right-[2px] top-[-168px] font-medium"
+>
+  {/* Mobile: only icon inside black circle */}
+  <div className="flex sm:hidden w-20 fixed right-[10px]  bottom-[20px] z-1000 h-20 bg-black text-white items-center justify-center rounded-full shadow-lg">
+    <Phone className="w-6 h-6" />
+  </div>
+
+  {/* Tablet & above: only number text */}
+  <span className="hidden sm:inline bg-[#131c23] text-white p-5 rounded-lg shadow-lg">
+    Tel: +966 556207221
+  </span>
+</a>
+
+          <img className="absolute right-[-123px] hidden xl:block top-[-190px]" src="/Group2.svg" alt="" />
+
             <div className="w-full lg:w-[437px] flex flex-col gap-2">
               <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Services</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
@@ -318,10 +321,12 @@ const Homepage = () => {
         </div>
 
         {/* Scrolling Card Container */}
-        <div className=" relative w-full lg:w-[1335px] lg:left-[125px] scroll-container">
+        <div className=" relative max-w-[1455px] mx-auto flex justify-end scroll-container">
+        <img className="absolute left-10 bottom-21.5 hidden xl:block" src="/Group10.svg" alt="" />
           <ScrollingCards cards={expertiseCards} />
         </div>
       </section>
+
 
       {/* Section 3: Since 2005 */}
       <section className="py-12 sm:py-16 lg:py-50 bg-gray-50">
@@ -352,8 +357,11 @@ const Homepage = () => {
         className="py-12 sm:py-16 lg:py-24 text-white"
         style={{ backgroundColor: PRIMARY_DARK }}
       >
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-2">
+          <div className="grid relative gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-2">
+            <img className="hidden xl:block absolute left-295 bottom-146" src="/Group1.svg" alt="" />
+
             {/* Left Side Content */}
             <div>
               <h2 className="text-2xl lg:text-start text-center sm:text-3xl lg:text-[48px] font-medium mb-6 lg:mb-8 leading-tight">
@@ -415,7 +423,7 @@ const Homepage = () => {
         title="Contact Us"
         contacts={contactData}
         showImage={true}
-        imageSrc="/contact.jpg"
+        imageSrc="/contact.webp"
         imageAlt="Contact Banner"
       />
 

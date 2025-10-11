@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import HeroSection from "../Components/HeroSection";
 import SectionWithImage from "../Components/SectionWithImage";
 import ServiceCard from "../Components/ServiceCard";
 import ScrollingCards from "../Components/ScrollingCards";
@@ -15,26 +14,26 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "/hero1.jpg", link:"/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.jpg", link:"/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.jpg", link:"/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.jpg", link:"/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.jpg", link:"/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/hero1.webp", link:"/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.webp", link:"/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.webp", link:"/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.webp", link:"/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.webp", link:"/service?service=Cutting" },
 ];
 
 const serviceCards = [
   {
-    imageSrc: "/serimg.jpg",
+    imageSrc: "/serimg.webp",
     imageAlt: "Accuracy and Reliability",
     title: "Accuracy and Reliability for Complex Engineering Needs"
   },
   {
-    imageSrc: "/serimg1.jpg",
+    imageSrc: "/serimg1.webp",
     imageAlt: "Cost-Effective Solutions",
     title: "Cost-Effective Solutions Without Compromising Quality"
   },
   {
-    imageSrc: "/serimg2.jpg",
+    imageSrc: "/serimg2.webp",
     imageAlt: "On-Time Delivery",
     title: "On-Time Delivery for Critical Projects"
   }
@@ -45,10 +44,7 @@ const Servicespage = () => {
 
   // Custom CSS for animations and styles
   const customStyles = `
-    * {
-      font-family: 'Inter Display';
-    }
-    
+
     .slider-wrapper {
       position: relative;
       width: 100%;
@@ -163,16 +159,16 @@ const Servicespage = () => {
 
   // Define a mapping object for your service content
   const ALL_SERVICES = {
-      'machining': { title: 'Machining Division', subtitle: "Machining Division" ,des: 'Our machining division specializes in precision engineering, delivering high-quality components with tight tolerances. Equipped with advanced tools, we handle turning, milling, drilling, and custom machining jobs. We ensure accuracy, durability, and efficiency for industrial applications.',img:"/serviceimg.png",
+      'machining': { title: 'Machining Division', subtitle: "Machining Division" ,des: 'Our machining division specializes in precision engineering, delivering high-quality components with tight tolerances. Equipped with advanced tools, we handle turning, milling, drilling, and custom machining jobs. We ensure accuracy, durability, and efficiency for industrial applications.',img:"/serviceimg.webp",
         description:"The Machining Division at Pinnacle Axis is the backbone of our precision engineering capabilities. With a fleet of advanced CNC machines and a team of experienced professionals, we deliver solutions that consistently meet the highest global benchmarks. We specialize in producing complex, high-accuracy components for industries where reliability and precision are mission-critical. Our capabilities include: Turning & Milling – Crafting precise cylindrical and prismatic parts with tight tolerances. Drilling & Boring – Executing accurate hole-making for critical assemblies and heavy-duty applications. Custom Machining Jobs – Tailored production for specialized industrial requirements. By integrating cutting-edge tools with strict quality control, we ensure durability, repeatability, and flawless performance in every component manufactured. Our Machining Division proudly serves industries such as oil & gas, construction, manufacturing, aerospace, and heavy machinery—providing parts that keep their operations running smoothly and efficiently."},
-      'Fabrication': { title: 'Steel Fabrication Division',subtitle: "Steel Fabrication Division", des: 'We provide complete steel fabrication solutions tailored to industrial and commercial needs. From design to assembly, our team delivers durable structures and components. Our expertise ensures strength, reliability, and timely execution.',img:"/steel.jpg",
+      'Fabrication': { title: 'Steel Fabrication Division',subtitle: "Steel Fabrication Division", des: 'We provide complete steel fabrication solutions tailored to industrial and commercial needs. From design to assembly, our team delivers durable structures and components. Our expertise ensures strength, reliability, and timely execution.',img:"/steel.webp",
         description:"The Steel Fabrication Division at Pinnacle Axis is at the core of our structural excellence. Equipped with advanced machinery and supported by skilled fabricators and engineers, we deliver robust, high-precision steel solutions that meet international standards of quality and safety.We specialize in designing, fabricating, and assembling complex steel structures for diverse industrial sectors, ensuring strength, accuracy, and long-term performance. Our capabilities include:Cutting, Bending & Rolling – Shaping steel with precision to achieve exact dimensions and geometries.Welding & Assembly – Executing high-strength joints and seamless integrations for structural reliability.Custom Fabrication Jobs – Delivering tailor-made solutions to meet unique project requirements and engineering specifications.By combining state-of-the-art equipment with strict inspection protocols, we guarantee consistency, durability, and timely delivery. Our Steel Fabrication Division proudly supports sectors such as oil & gas, infrastructure, construction, manufacturing, and heavy industries—providing critical components and structures that power operations."},
-      'Rubber': { title: 'Rubber and PU Division',subtitle: "Rubber and PU Division", des: 'Our Rubber and PU division manufactures customized parts for industrial wear and tear applications. We produce seals, linings, rollers, and protective coatings that extend equipment life. High-performance materials guarantee durability under tough conditions.',img:"/rubber.jpg",
+      'Rubber': { title: 'Rubber and PU Division',subtitle: "Rubber and PU Division", des: 'Our Rubber and PU division manufactures customized parts for industrial wear and tear applications. We produce seals, linings, rollers, and protective coatings that extend equipment life. High-performance materials guarantee durability under tough conditions.',img:"/rubber.webp",
        description:"The Rubber and PU Division at Pinnacle Axis plays a key role in delivering durable, high-performance components for demanding industries. Using advanced molding and casting technologies, we produce precision-engineered rubber and polyurethane products that meet global quality standards.We specialize in designing, manufacturing, and supplying custom-molded parts where resilience, flexibility, and wear resistance are essential. Our capabilities include:Molding & Casting – Producing components with accurate shapes and consistent properties.Custom PU & Rubber Products – Tailoring solutions for unique industrial needs.Repair & Refurbishment – Extending component life through precision rework.With strict quality control and modern production methods, we ensure long-lasting performance. The division serves oil & gas, construction, manufacturing, marine, and heavy industries—providing essential components that enhance operational efficiency."},
-      'Laser': { title: 'Laser and CNC',subtitle: "Laser and CNC", des: 'We use advanced equipment and the latest technology to deliver high-speed, high-accuracy cutting and machining. Our systems handle metals, plastics, and composites with precision. This ensures detailed designs, smooth finishes, and faster project completion.',img:"/laser.jpg",
+      'Laser': { title: 'Laser and CNC',subtitle: "Laser and CNC", des: 'We use advanced equipment and the latest technology to deliver high-speed, high-accuracy cutting and machining. Our systems handle metals, plastics, and composites with precision. This ensures detailed designs, smooth finishes, and faster project completion.',img:"/laser.webp",
         description:"The Laser and CNC Division at Pinnacle Axis drives precision manufacturing with advanced cutting, engraving, and machining solutions. Equipped with state-of-the-art CNC machines and high-powered laser systems, we deliver intricate and accurate results across diverse industrial applications.We specialize in high-speed, high-accuracy processing of metals and other materials, ensuring clean finishes and consistent quality. Our capabilities include:Laser Cutting & Engraving – Achieving fine detailing, sharp edges, and smooth surfaces.CNC Machining – Producing complex parts with tight tolerances and repeatable accuracy.Custom Fabrication – Tailoring solutions for specialized design and engineering needs.Through advanced technology and strict quality standards, we guarantee efficiency, precision, and reliability in every project. The division supports oil & gas, construction, manufacturing, and heavy industries—delivering components that meet demanding operational requirements."},
-      'Cutting': { title: 'Cutting, Bending & Rolling',subtitle: "Cutting, Bending & Rolling", des: 'We offer precision cutting, bending, and rolling services to meet diverse metal fabrication requirements. With advanced machinery, we process plates, sheets, and profiles to exact specifications. This ensures consistency and accuracy in every project.',img:"/cutting.jpg",
-       description:"The Cutting, Bending & Rolling Division at Pinnacle Axis provides high-precision sheet metal processing tailored to diverse industrial needs. Using advanced machinery and skilled technicians, we deliver accurate cuts, smooth bends, and high-quality rolled components with exceptional consistency.We specialize in transforming raw metal sheets into precisely engineered components, ensuring structural integrity and flawless finishes. Our core capabilities include:Cutting – Precise shaping of metal sheets for any design or scale.Bending – Achieving clean angles and consistent geometries.Rolling – Forming smooth curves and cylindrical structures for complex applications.By combining cutting-edge equipment with rigorous quality control, we ensure reliable, efficient, and durable results for industries such as construction, manufacturing, oil & gas, and heavy machinery."}
+      'Cutting': { title: 'Cutting, Bending & Rolling',subtitle: "Cutting, Bending & Rolling", des: 'We offer precision cutting, bending, and rolling services to meet diverse metal fabrication requirements. With advanced machinery, we process plates, sheets, and profiles to exact specifications. This ensures consistency and accuracy in every project.',img:"/cutting.webp",
+       description:"The Cutting, Bending & Rolling Division at Pinnacle Axis provides high-precision sheet metal processing tailored to diverse industrial needs. Using advanced machinery and skilled technicians, we deliver accurate cuts, smooth bends, and high-quality rolled components with exceptional consistency.We specialize in transforming raw metal sheets into precisely engineered components, ensuring structural integrity and flawless finishes. Our core capabilities include:Cutting – Precise shaping of metal sheets for any design or scale.Bending – Achieving clean angles and consistent geometries.Rolling – Forming smooth curves and cylindrical structures for complex applications.By combining cutting-edge equipment with rigorous quality control, we ensure reliable, efficient, and durable results for industries such as construction, manufacturing, oil & gas, and heavy machinery.Our experienced team works closely with clients to meet exact specifications and project timelines. This collaborative approach allows us to deliver customized solutions that drive long-term value and performance."}
       }
   useEffect(() => {
       if (serviceKey) {
@@ -256,30 +252,26 @@ const Servicespage = () => {
         </div>
       </section>
 
-      {/* Decorative Elements */}
-      <div className="hidden lg:block">
-        <img className="absolute right-0 top-[400px] lg:top-[506px] z-3" src="/Group2.svg" alt="" />
-        <img className="absolute left-24 w-[50px] top-[2000px] lg:top-[2750px] z-4" src="/Group10.svg" alt="" />
-      </div>
+    
 
       {/* What We Do Section */}
       <SectionWithImage
         backgroundColor="#E1E6E9"
         margin="-5px 0px 0px 0px"
         height="auto"
-        imageSrc="/Rectangle 34624859.png"
+        imageSrc="/Rectangle 34624859.webp"
         imageAlt="What We Do Image"
         imagePosition="right"
         imageWidth="491px"
         imageHeight="550px"
         tag="true"
       >
-        <div className="w-full lg:w-[592px] flex flex-col gap-6 lg:gap-[29px]">
+        <div className="w-full flex flex-col gap-6 lg:gap-[15px]">
           <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>{serviceData.subtitle}</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
             What we do?
           </h2>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center  gap-2">
             <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
               {serviceData.description}
               </p>
@@ -290,14 +282,14 @@ const Servicespage = () => {
       {/* Why Choose Us Section */}
       <section className="flex flex-col gap-6 sm:gap-8 lg:gap-10 w-auto items-center justify-center pt-12 sm:pt-16 lg:pt-20 h-auto sm:h-[600px] lg:h-[717px]">
         <p className="font-semibold text-3xl sm:text-4xl lg:text-5xl">Why Choose Us</p>
-        <div className="flex flex-col sm:flex-row gap-8 md:flex md:w-full md:gap-5 md:px-3 md:justify-around lg:justify-center sm:gap-12 lg:gap-15">
+        <div className="flex flex-col max-w-7xl sm:flex-row mb-[15px] gap-8 md:flex md:w-full md:gap-5 md:px-3 md:justify-around lg:justify-center sm:gap-12 lg:gap-15">
           {serviceCards.map((card, index) => (
             <ServiceCard
               key={index}
               imageSrc={card.imageSrc}
               imageAlt={card.imageAlt}
               title={card.title}
-              className="w-full industrial-card-image lg:w-auto"
+              className=" industrial-card-image"
               service="true"
             />
           ))}
@@ -305,12 +297,12 @@ const Servicespage = () => {
       </section>
 
       {/* Services Section */}
-      <section 
-        style={{ background: "#E1E6E9", margin: "60px 0px 0px 0px" }} 
-        className="relative py-8 sm:py-12 md:h-[400px] lg:h-[740px] lg:py-16 bg-white"
+      <section
+        style={{ background: "#E1E6E9", }}
+        className="relative py-8 sm:py-12 lg:py-16 bg-white md:h-[774px] lg:h-[700px] h-[836px] lg:ml-[60px] lg:mt-[60px] "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start mb-8 lg:mb-10">
+          <div className="flex relative flex-col lg:flex-row justify-between gap-8 lg:gap-20 items-start mb-8 lg:mb-10">
             <div className="w-full lg:w-[437px] flex flex-col gap-2">
               <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Services</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
@@ -328,20 +320,19 @@ const Servicespage = () => {
                 At Pinnacle Axis, we deliver precision, reliability, and innovation across every division.
               </p>
               <p className="font-normal text-lg sm:text-xl lg:text-[22px]">
-                With over 15 years of proven expertise and 1,000+ successful projects, our services are designed to meet 
+                With over 15 years of proven expertise and 1,000+ successful projects, our services are designed to meet
                 diverse industrial needs with world-class quality.
               </p>
             </div>
           </div>
-        </div>       
+        </div>
+
+        {/* Scrolling Card Container */}
+        <div className=" relative max-w-[1455px] mx-auto flex justify-end scroll-container">
+        <img className="absolute left-10 bottom-21.5 hidden xl:block" src="/Group10.svg" alt="" />
+          <ScrollingCards cards={expertiseCards} />
+        </div>
       </section>
-
-      {/* Spacer */}
-
-      {/* Scrolling Cards */}
-      <div className="absolute w-full lg:w-[1335px] lg:left-[185px] lg:top-[2350px] scroll-container">
-        <ScrollingCards cards={expertiseCards} />
-      </div>
 
       {/* Contact Section */}
       <ContactCard 
@@ -353,7 +344,7 @@ const Servicespage = () => {
           description: "Behind Pinnacle Axis is a team of highly skilled engineers, technicians, and industry experts who bring their knowledge and passion to every project. Our people are our greatest strength — working together to deliver solutions that are precise, durable, and future-ready."
         }]}
         showImage={true}
-        imageSrc="/contact.jpg"
+        imageSrc="/contact.webp"
         imageAlt="Contact Banner"
         tag="true"
       />

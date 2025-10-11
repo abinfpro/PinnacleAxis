@@ -52,7 +52,7 @@ const Counter = ({ target, suffix, label, isKilo = false }) => {
         {displayCount}
         {suffix}
       </div>
-      <p className="text-gray-300 font-normal text-xs sm:text-sm tracking-widest">{label}</p>
+      <p className="text-gray-300 font-normal lg:text-[15px] text-xs sm:text-sm tracking-widest">{label}</p>
     </div>
   );
 };
