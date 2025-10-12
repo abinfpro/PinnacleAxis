@@ -118,8 +118,8 @@ const Aboutpage = () => {
 
       {/* Mission Details Section */}
       <section className=" lg:pt-46">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row justify-between gap-[30px] text-center">
-          <div style={{ backgroundColor: "black" }} className="w-auto h-full lg:w-[741px] lg:h-[350px] mb-6 lg:mb-0">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row justify-between gap-[30px] mt-10 text-center">
+          <div style={{ backgroundColor: "black" }} className="w-auto hidden xl:block h-full lg:w-[741px] lg:h-[350px] mb-6 lg:mb-0">
             <img className="w-full h-full object-cover" src="/Rectangle 3462.webp" alt="" />
           </div>
           <div className="flex items-center">
@@ -142,7 +142,7 @@ const Aboutpage = () => {
       {/* Capabilities Section */}
       <section className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[35px] font-bold mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[35px] font-bold mb-6">
             Our Capabilities
           </h2>
 
