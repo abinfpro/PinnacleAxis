@@ -87,7 +87,7 @@ const Contactpage = () => {
   // 3. Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-      let phoneNumber = "966556207221"; // Your WhatsApp number with country code
+      let phoneNumber = "966534757184"; // Your WhatsApp number with country code
         const message = `
          Name: ${formData.firstName} ${formData.lastName}
          Email: ${formData.email}
