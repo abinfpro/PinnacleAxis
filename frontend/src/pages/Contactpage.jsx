@@ -87,7 +87,7 @@ const Contactpage = () => {
   // 3. Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-      let phoneNumber = "+966 556207221"; // Your WhatsApp number with country code
+      let phoneNumber = "966556207221"; // Your WhatsApp number with country code
         const message = `
          Name: ${formData.firstName} ${formData.lastName}
          Email: ${formData.email}
@@ -96,7 +96,8 @@ const Contactpage = () => {
          Message: ${formData.message}`;
        const encodedMessage = encodeURIComponent(message.trim());
 
-       const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+       const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
        window.open(url, '_blank').focus();
 
     // In a real application, you would send this data to a backend API here.
