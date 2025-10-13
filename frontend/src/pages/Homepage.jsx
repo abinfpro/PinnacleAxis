@@ -360,7 +360,7 @@ const Homepage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid relative gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-2">
-            <img className="hidden xl:block absolute left-295 bottom-146" src="/Group1.svg" alt="" />
+            <img className="hidden xl:block absolute left-295 bottom-155" src="/Group1.svg" alt="" />
 
             {/* Left Side Content */}
             <div>
@@ -375,7 +375,9 @@ const Homepage = () => {
                 Our strong values of honesty, respect, and continuous improvement make us a partner you can grow with.
               </p>
 
-              <div className="grid grid-cols-2 lg:flex gap-4 lg:gap-8 mt-6 lg:mt-10">
+              <div className="
+  grid grid-cols-2 gap-4 mt-6
+  1492:flex 1492:gap-8 1492:mt-10">
                 {statsData.map((stat, index) => (
                   <Counter key={index} {...stat} />
                 ))}
