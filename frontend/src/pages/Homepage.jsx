@@ -375,9 +375,7 @@ const Homepage = () => {
                 Our strong values of honesty, respect, and continuous improvement make us a partner you can grow with.
               </p>
 
-              <div className="
-  grid grid-cols-2 gap-4 mt-6
-  1492:flex 1492:gap-8 1492:mt-10">
+              <div className="grid grid-cols-2 gap-4 mt-6 1492:flex 1492:gap-8 1492:mt-10">
                 {statsData.map((stat, index) => (
                   <Counter key={index} {...stat} />
                 ))}
