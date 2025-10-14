@@ -317,8 +317,7 @@ const Contactpage = () => {
                           checked={formData.subject === subject}
                           onChange={handleChange}
                           className="w-4 h-4 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
-                          style={{ color: ACCENT_ORANGE }}
-                        />
+                          style={{ accentColor: "rgb(234, 77, 51)" }}                        />
                         <label
                           htmlFor={`inquiry${index + 1}`}
                           className="ml-2 text-[12px] font-normal text-gray-700 cursor-pointer select-none"
