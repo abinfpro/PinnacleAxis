@@ -120,7 +120,7 @@ const Aboutpage = () => {
       <section className=" lg:pt-46">
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row justify-between gap-[30px] mt-10 text-center">
           <div style={{ backgroundColor: "black" }} className="w-auto hidden lg:block h-full lg:w-[741px] lg:h-[350px] mb-6 lg:mb-0">
-            <img className="w-full h-full object-cover" src="/Rectangle 3462.webp" alt="" />
+            <img className="w-full h-full object-cover" src="/cbr5.webp" alt="" />
           </div>
           <div className="flex items-center">
             <div className="w-full lg:w-[592px] flex flex-col gap-2 lg:gap-[10px] text-start">

@@ -46,7 +46,7 @@ const serviceData = ALL_IMAGE[img];
           </div>
 
           {/* Image */}
-          {serviceData && (
+          {/* {serviceData && ( */}
             <div 
               className={` relative ${
                 imagePosition === 'left' ? 'order-first' : 'order-last'
@@ -54,11 +54,11 @@ const serviceData = ALL_IMAGE[img];
             >
               <img 
                 className="w-full h-auto object-cover rounded-lg" 
-                src={serviceData.image} 
+                src={serviceData ? serviceData.image : "/mach6.webp"}
                 alt={imageAlt} 
               />
             </div>
-          )}
+           {/* )} */}
         </div>
       </div>
     </section>

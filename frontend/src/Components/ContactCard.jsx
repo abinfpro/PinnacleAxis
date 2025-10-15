@@ -1,5 +1,7 @@
 import React from 'react';
 import { Phone, InboxIcon, Target } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
+
 
 const PRIMARY_DARK = "#131C23";
 
@@ -8,10 +10,22 @@ const ContactCard = ({
   contacts = [],
   className = "",
   showImage = true,
-  imageSrc = "/contact.webp",
+  // imageSrc = "/contact.webp",
   imageAlt = "Contact Banner",
   tag
 }) => {
+
+  const location = useLocation();
+ 
+  const footerImages = {
+    "/":{image:"/fabric5.webp"},
+    "/service":{image:"/laser1.webp"},
+    "/contact":{image:"/fabric2.webp"}
+  }
+  // fallback image if route not found
+const imageSrc = footerImages[location.pathname]?.image;
+
+
   return (
     <section className={`pt-8 h-[400px] ${tag ? " lg:mt-[100px] mt-[50px] " : ""} sm:py-10 bg-white ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
@@ -20,8 +34,7 @@ const ContactCard = ({
           <div className="grid grid-cols-1 md:px-[px] lg:px-[40px] md:pb-[0px] lg:pb-[40px] bg-white md:grid-cols-2 gap-10 w-full">
 
             {/* Image Card */}
-            {showImage && (
-              // Changed hidden sm:block to hidden md:block: Image is hidden until 768px
+            {/* {showImage && ( */}
               <div className={`relative hidden  md:block md:h-[300px] lg:h-full overflow-hidden shadow-2xl`}>
                 <img
                   src={imageSrc}
@@ -30,7 +43,7 @@ const ContactCard = ({
                   className="w-full lg:h-full md:h-96 object-cover opacity-90"
                 />
               </div>
-            )}
+            {/* )} */}
 
             {/* Contact Details */}
             <div

@@ -93,9 +93,9 @@ const Footer = ({tag}) => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
-                info@pinnaxsa.com
-                </a>
+              <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=info@pinnaxsa.com`} 
+              className="hover:text-white text-[16px] sm:text-[18px] font-normal transition" 
+              target='_blank'  rel="noopener noreferrer">info@pinnaxsa.com</a> 
               </li>
             </ul>
           </div>
