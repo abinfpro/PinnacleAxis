@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, InboxIcon } from 'lucide-react';
+import { Phone, InboxIcon, Target } from 'lucide-react';
 
 const PRIMARY_DARK = "#131C23";
 
@@ -58,7 +58,7 @@ const ContactCard = ({
                       <h4 className="flex items-center gap-3 text-[15px] sm:text-[17px] font-normal text-white">
                         {/* Assuming InboxIcon is a component/icon */}
                         {!tag && <InboxIcon className="w-3 h-3 sm:w-4 sm:h-4" />}
-                        {contact.email}
+                       <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`} target='_blank'  rel="noopener noreferrer">{contact.email}</a>
                       </h4>
                     </div>
                   </div>

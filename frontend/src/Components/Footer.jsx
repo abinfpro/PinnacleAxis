@@ -102,10 +102,7 @@ const Footer = ({tag}) => {
         </div>
 
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-700 text-center text-xs text-gray-500">
-          &copy; 2025 Pinnacle Axis. All rights reserved. |{" "}
-          <a href="#" className="hover:text-white transition">
-            Privacy Policy
-          </a>
+          &copy; 2025 Pinnacle Axis. All rights reserved{" "}
         </div>
       </div>
     </footer>
