@@ -14,39 +14,39 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "/hero1.webp", link:"/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.webp", link:"/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.webp", link:"/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.webp", link:"/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.webp", link:"/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/mach6.webp", link:"/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/fabric1.webp", link:"/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/rubber3.webp", link:"/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/laser4.webp", link:"/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/cbr1.webp", link:"/service?service=Cutting" },
 ];
 
 
 const ALL_IMAGE = {
   machining: [
-    { image: "mach1.webp", imageAlt: "Accuracy and Reliability", title: "Accuracy and Reliability for Complex Engineering Needs" },
-    { image: "mach5.webp", imageAlt: "Cost-Effective Solutions", title: "Cost-Effective Solutions Without Compromising Quality" },
-    { image: "mach2.webp", imageAlt: "On-Time Delivery", title: "On-Time Delivery for Critical Projects" },
+    { image: "mach1.webp", imageAlt: "Accuracy and Reliability", title: "Precision Engineering for High-Performance Components" },
+    { image: "mach5.webp", imageAlt: "Cost-Effective Solutions", title: "Advanced Equipment Ensuring Dimensional Accuracy" },
+    { image: "mach2.webp", imageAlt: "On-Time Delivery",         title: "Fast Turnaround with Consistent Quality" },
   ],
   Fabrication: [
-    { image: "fabric2.webp", imageAlt: "Accuracy and Reliability", title: "Accuracy and Reliability for Complex Engineering Needs" },
-    { image: "fabric3.webp", imageAlt: "Cost-Effective Solutions", title: "Cost-Effective Solutions Without Compromising Quality" },
-    { image: "fabric4.webp", imageAlt: "On-Time Delivery", title: "On-Time Delivery for Critical Projects" },
+    { image: "fabric2.webp", imageAlt: "Accuracy and Reliability", title: "Expert Craftsmanship for Complex Structural Projects" },
+    { image: "fabric3.webp", imageAlt: "Cost-Effective Solutions", title: "Durable and Safe Builds with Quality Assurance" },
+    { image: "fabric4.webp", imageAlt: "On-Time Delivery",         title: "Timely Execution Meeting Every Specification" },
   ],
   Rubber: [
-    { image: "rubber2.webp", imageAlt: "Accuracy and Reliability", title: "Accuracy and Reliability for Complex Engineering Needs" },
-    { image: "rubber1.webp", imageAlt: "Cost-Effective Solutions", title: "Cost-Effective Solutions Without Compromising Quality" },
-    { image: "rubber3.webp", imageAlt: "On-Time Delivery", title: "On-Time Delivery for Critical Projects" },
+    { image: "rubber2.webp", imageAlt: "Accuracy and Reliability", title: "Custom-Molded Solutions for Industrial Applications" },
+    { image: "rubber1.webp", imageAlt: "Cost-Effective Solutions", title: "High Durability and Resistance to Wear and Tear" },
+    { image: "rubber3.webp", imageAlt: "On-Time Delivery",         title: "Reliable Performance Under Demanding Conditions" },
   ],
   Laser: [
-    { image: "laser1.webp", imageAlt: "Accuracy and Reliability", title: "Accuracy and Reliability for Complex Engineering Needs" },
-    { image: "laser4.webp", imageAlt: "Cost-Effective Solutions", title: "Cost-Effective Solutions Without Compromising Quality" },
-    { image: "laser3.webp", imageAlt: "On-Time Delivery", title: "On-Time Delivery for Critical Projects" },
+    { image: "laser1.webp", imageAlt: "Accuracy and Reliability", title: "High-Accuracy Cutting for Intricate Designs" },
+    { image: "laser4.webp", imageAlt: "Cost-Effective Solutions", title: "Superior Finishes with Minimal Material Waste" },
+    { image: "laser3.webp", imageAlt: "On-Time Delivery",         title: "Efficient Production with Automated Precision" },
   ],
   Cutting: [
-    { image: "cbr6.webp", imageAlt: "Accuracy and Reliability", title: "Accuracy and Reliability for Complex Engineering Needs" },
-    { image: "cbr2.webp", imageAlt: "Cost-Effective Solutions", title: "Cost-Effective Solutions Without Compromising Quality" },
-    { image: "cbr3.webp", imageAlt: "On-Time Delivery", title: "On-Time Delivery for Critical Projects" },
+    { image: "cbr6.webp", imageAlt: "Accuracy and Reliability", title: "Precise Metal Forming for Any Design Requirement" },
+    { image: "cbr2.webp", imageAlt: "Cost-Effective Solutions", title: "Seamless Bends and Rolls with Advanced Machinery" },
+    { image: "cbr3.webp", imageAlt: "On-Time Delivery",         title: "Consistent Results Delivered On Time, Every Time" },
   ],
 }
 
@@ -172,16 +172,16 @@ const Servicespage = () => {
 
   // Define a mapping object for your service content
   const ALL_SERVICES = {
-      'machining': { title: 'Machining Division', subtitle: "Machining Division" ,des: 'Our machining division specializes in precision engineering, delivering high-quality components with tight tolerances. Equipped with advanced tools, we handle turning, milling, drilling, and custom machining jobs. We ensure accuracy, durability, and efficiency for industrial applications.',img:"/serviceimg.webp",
-        description:"The Machining Division at Pinnacle Axis is the backbone of our precision engineering capabilities. With a fleet of advanced CNC machines and a team of experienced professionals, we deliver solutions that consistently meet the highest global benchmarks. We specialize in producing complex, high-accuracy components for industries where reliability and precision are mission-critical. Our capabilities include: Turning & Milling – Crafting precise cylindrical and prismatic parts with tight tolerances. Drilling & Boring – Executing accurate hole-making for critical assemblies and heavy-duty applications. Custom Machining Jobs – Tailored production for specialized industrial requirements. By integrating cutting-edge tools with strict quality control, we ensure durability, repeatability, and flawless performance in every component manufactured. Our Machining Division proudly serves industries such as oil & gas, construction, manufacturing, aerospace, and heavy machinery—providing parts that keep their operations running smoothly and efficiently."},
+      'machining': { title: 'Machining Division', subtitle: "Machining Division" ,des: 'Our machining division specializes in precision engineering, delivering high-quality components with tight tolerances. Equipped with advanced tools, we handle turning, milling, drilling, and custom machining jobs. We ensure accuracy, durability, and efficiency for industrial applications.',img:"/mach6.webp",
+        description:"The Machining Division at Pinnacle Axis is the backbone of our precision engineering capabilities. With a fleet of advanced CNC machines and a team of experienced professionals, we deliver solutions that consistently meet the highest global benchmarks. We specialize in producing complex, high-accuracy components for industries where reliability and precision are mission-critical.Our capabilities include: Turning & Milling – Crafting precise cylindrical and prismatic parts with tight tolerances. Drilling & Boring – Executing accurate hole-making for critical assemblies and heavy-duty applications. Custom Machining Jobs – Tailored production for specialized industrial requirements.Quality & Client Collaboration: By integrating cutting-edge tools with strict quality control, we ensure durability, repeatability, and flawless performance in every component manufactured. Our Machining Division proudly serves industries such as oil & gas, construction, manufacturing, aerospace, and heavy machinery—providing parts that keep their operations running smoothly and efficiently."},
       'Fabrication': { title: 'Steel Fabrication Division',subtitle: "Steel Fabrication Division", des: 'We provide complete steel fabrication solutions tailored to industrial and commercial needs. From design to assembly, our team delivers durable structures and components. Our expertise ensures strength, reliability, and timely execution.',img:"/fabric6.webp",
-        description:"The Steel Fabrication Division at Pinnacle Axis is at the core of our structural excellence. Equipped with advanced machinery and supported by skilled fabricators and engineers, we deliver robust, high-precision steel solutions that meet international standards of quality and safety.We specialize in designing, fabricating, and assembling complex steel structures for diverse industrial sectors, ensuring strength, accuracy, and long-term performance. Our capabilities include:Cutting, Bending & Rolling – Shaping steel with precision to achieve exact dimensions and geometries.Welding & Assembly – Executing high-strength joints and seamless integrations for structural reliability.Custom Fabrication Jobs – Delivering tailor-made solutions to meet unique project requirements and engineering specifications.By combining state-of-the-art equipment with strict inspection protocols, we guarantee consistency, durability, and timely delivery. Our Steel Fabrication Division proudly supports sectors such as oil & gas, infrastructure, construction, manufacturing, and heavy industries—providing critical components and structures that power operations."},
-      'Rubber': { title: 'Rubber and PU Division',subtitle: "Rubber and PU Division", des: 'Our Rubber and PU division manufactures customized parts for industrial wear and tear applications. We produce seals, linings, rollers, and protective coatings that extend equipment life. High-performance materials guarantee durability under tough conditions.',img:"/rubber.webp",
-       description:"The Rubber and PU Division at Pinnacle Axis plays a key role in delivering durable, high-performance components for demanding industries. Using advanced molding and casting technologies, we produce precision-engineered rubber and polyurethane products that meet global quality standards.We specialize in designing, manufacturing, and supplying custom-molded parts where resilience, flexibility, and wear resistance are essential. Our capabilities include:Molding & Casting – Producing components with accurate shapes and consistent properties.Custom PU & Rubber Products – Tailoring solutions for unique industrial needs.Repair & Refurbishment – Extending component life through precision rework.With strict quality control and modern production methods, we ensure long-lasting performance. The division serves oil & gas, construction, manufacturing, marine, and heavy industries—providing essential components that enhance operational efficiency."},
+        description:"The Steel Fabrication Division at Pinnacle Axis is at the core of our structural excellence. Equipped with advanced machinery and supported by skilled fabricators and engineers, we deliver robust, high-precision steel solutions that meet international standards of quality and safety. We specialize in designing, fabricating, and assembling complex steel structures for diverse industrial sectors, ensuring strength, accuracy, and long-term performance.Our capabilities include: Cutting, Bending & Rolling – Shaping steel with precision to achieve exact dimensions and geometries. Welding & Assembly – Executing high-strength joints and seamless integrations for structural reliability. Custom Fabrication Jobs – Delivering tailor-made solutions to meet unique project requirements and engineering specifications.Quality & Client Collaboration: By combining state-of-the-art equipment with strict inspection protocols, we guarantee consistency, durability, and timely delivery. Our Steel Fabrication Division proudly supports sectors such as oil & gas, infrastructure, construction, manufacturing, and heavy industries—providing critical components and structures that power operations."},
+      'Rubber': { title: 'Rubber and PU Division',subtitle: "Rubber and PU Division", des: 'Our Rubber and PU division manufactures customized parts for industrial wear and tear applications. We produce seals, linings, rollers, and protective coatings that extend equipment life. High-performance materials guarantee durability under tough conditions.',img:"/rubber1.webp",
+       description:"The Rubber and PU Division at Pinnacle Axis plays a key role in delivering durable, high-performance components for demanding industries. Using advanced molding and casting technologies, we produce precision-engineered rubber and polyurethane products that meet global quality standards. We specialize in designing, manufacturing, and supplying custom-molded parts where resilience, flexibility, and wear resistance are essential.Our capabilities include: Molding & Casting – Producing components with accurate shapes and consistent properties. Custom PU & Rubber Products – Tailoring solutions for unique industrial needs. Repair & Refurbishment – Extending component life through precision rework.Quality & Client Collaboration: With strict quality control and modern production methods, we ensure long-lasting performance. The division serves oil & gas, construction, manufacturing, marine, and heavy industries—providing essential components that enhance operational efficiency."},
       'Laser': { title: 'Laser and CNC',subtitle: "Laser and CNC", des: 'We use advanced equipment and the latest technology to deliver high-speed, high-accuracy cutting and machining. Our systems handle metals, plastics, and composites with precision. This ensures detailed designs, smooth finishes, and faster project completion.',img:"/laser2.webp",
-        description:"The Laser and CNC Division at Pinnacle Axis drives precision manufacturing with advanced cutting, engraving, and machining solutions. Equipped with state-of-the-art CNC machines and high-powered laser systems, we deliver intricate and accurate results across diverse industrial applications.We specialize in high-speed, high-accuracy processing of metals and other materials, ensuring clean finishes and consistent quality. Our capabilities include:Laser Cutting & Engraving – Achieving fine detailing, sharp edges, and smooth surfaces.CNC Machining – Producing complex parts with tight tolerances and repeatable accuracy.Custom Fabrication – Tailoring solutions for specialized design and engineering needs.Through advanced technology and strict quality standards, we guarantee efficiency, precision, and reliability in every project. The division supports oil & gas, construction, manufacturing, and heavy industries—delivering components that meet demanding operational requirements."},
+        description:"The Laser and CNC Division at Pinnacle Axis drives precision manufacturing with advanced cutting, engraving, and machining solutions. Equipped with state-of-the-art CNC machines and high-powered laser systems, we deliver intricate and accurate results across diverse industrial applications. We specialize in high-speed, high-accuracy processing of metals and other materials, ensuring clean finishes and consistent quality.Our capabilities include: Laser Cutting & Engraving – Achieving fine detailing, sharp edges, and smooth surfaces. CNC Machining – Producing complex parts with tight tolerances and repeatable accuracy. Custom Fabrication – Tailoring solutions for specialized design and engineering needs.Quality & Client Collaboration: Through advanced technology and strict quality standards, we guarantee efficiency, precision, and reliability in every project. The division supports oil & gas, construction, manufacturing, and heavy industries—delivering components that meet demanding operational requirements."},
       'Cutting': { title: 'Cutting, Bending & Rolling',subtitle: "Cutting, Bending & Rolling", des: 'We offer precision cutting, bending, and rolling services to meet diverse metal fabrication requirements. With advanced machinery, we process plates, sheets, and profiles to exact specifications. This ensures consistency and accuracy in every project.',img:"/cbr1.webp",
-       description:"The Cutting, Bending & Rolling Division at Pinnacle Axis provides high-precision sheet metal processing tailored to diverse industrial needs. Using advanced machinery and skilled technicians, we deliver accurate cuts, smooth bends, and high-quality rolled components with exceptional consistency.We specialize in transforming raw metal sheets into precisely engineered components, ensuring structural integrity and flawless finishes. Our core capabilities include:Cutting – Precise shaping of metal sheets for any design or scale.Bending – Achieving clean angles and consistent geometries.Rolling – Forming smooth curves and cylindrical structures for complex applications.By combining cutting-edge equipment with rigorous quality control, we ensure reliable, efficient, and durable results for industries such as construction, manufacturing, oil & gas, and heavy machinery.Our experienced team works closely with clients to meet exact specifications and project timelines. This collaborative approach allows us to deliver customized solutions that drive long-term value and performance."}
+       description:"The Cutting, Bending & Rolling Division at Pinnacle Axis provides high-precision sheet metal processing tailored to diverse industrial needs. Using advanced machinery and skilled technicians, we deliver accurate cuts, smooth bends, and high-quality rolled components with exceptional consistency. We specialize in transforming raw metal sheets into precisely engineered components, ensuring structural integrity and flawless finishes.Our capabilities include: Cutting – Precise shaping of metal sheets for any design or scale. Bending – Achieving clean angles and consistent geometries. Rolling – Forming smooth curves and cylindrical structures for complex applications.Quality & Client Collaboration: By combining cutting-edge equipment with rigorous quality control, we ensure reliable, efficient, and durable results for industries such as construction, manufacturing, oil & gas, and heavy machinery. Our experienced team works closely with clients to meet exact specifications and project timelines. This collaborative approach allows us to deliver customized solutions that drive long-term value and performance."}
       }
   useEffect(() => {
       if (serviceKey) {
@@ -282,9 +282,37 @@ const Servicespage = () => {
             What we do?
           </h2>
           <div className="flex items-center  gap-2">
-            <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
-              {serviceData.description}
-              </p>
+           {/* <p className="text-[16px] sm:text-[17px] lg:text-[18px] font-normal">
+  {serviceData.description.split('Our capabilities include:')[0]}
+  <br />
+  <span className="font-semibold text-[#EA4D33]">Our capabilities include:</span>
+
+
+  {serviceData.description.split('Quality & Client Collaboration:')[1]}
+  <br />
+  <span className="font-semibold text-[#EA4D33]">Quality & Client Collaboration:</span>
+  
+</p> */}
+
+
+<p>
+  {/* Part before "Our capabilities include:" */}
+  {serviceData.description.split('Our capabilities include:')[0]}
+  <br />
+  <span className="font-semibold text-[#EA4D33]">Our capabilities include:</span>
+  
+  {/* Part between "Our capabilities include:" and "Quality & Client Collaboration:" */}
+  {serviceData.description
+    .split('Our capabilities include:')[1]
+    ?.split('Quality & Client Collaboration:')[0]}
+  <br />
+  <span className="font-semibold text-[#EA4D33]">Quality & Client Collaboration:</span>
+
+  {/* Part after "Quality & Client Collaboration:" */}
+  {serviceData.description.split('Quality & Client Collaboration:')[1]}
+</p>
+
+
           </div>
         </div>
       </SectionWithImage>

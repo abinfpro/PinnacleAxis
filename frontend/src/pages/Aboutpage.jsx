@@ -76,7 +76,7 @@ const Aboutpage = () => {
       <section className="slider-wrapper relative">
         <div>
           <img
-            src="/Rectangleabout.webp"
+            src="/cbr4.webp"
             alt="About Us Background"
             className="w-full h-[100vh]  object-cover"
           />
@@ -103,8 +103,7 @@ const Aboutpage = () => {
       {/* Mission Section */}
       <SectionWithImage backgroundColor="#E1E6E9" margin="-90px 0px 0px 0px" height="auto" imageSrc="/Rectangle34.webp" imageAlt="Mission Image" imagePosition="right" imageWidth="491px" imageHeight="450px">
         <div className="w-auto relative flex flex-col gap-6 lg:gap-[29px]">
-          <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Our Mission</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
+          <h2 style={{ color: '#EA4D33' }} className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
             Our Mission
           </h2>
           <div className="flex items-center gap-2">
@@ -124,8 +123,7 @@ const Aboutpage = () => {
           </div>
           <div className="flex items-center">
             <div className="w-full lg:w-[592px] flex flex-col gap-2 lg:gap-[10px] text-start">
-              <p className="font-medium text-lg sm:text-xl" style={{ color: '#EA4D33' }}>Our Vision</p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
+              <h2 style={{ color: '#EA4D33' }} className="text-3xl sm:text-4xl lg:text-5xl w-full lg:w-[437px] font-semibold text-gray-900 mb-2">
               Our Vision
               </h2>
               <div className="flex items-center gap-2">
@@ -142,7 +140,7 @@ const Aboutpage = () => {
       {/* Capabilities Section */}
       <section className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[35px] font-bold mb-6">
+          <h2 style={{ color: '#EA4D33' }} className="text-2xl sm:text-3xl lg:text-4xl text-[35px] font-bold mb-6">
             Our Capabilities
           </h2>
 
@@ -222,7 +220,6 @@ const Aboutpage = () => {
 >
   <div class="max-w-7xl relative py-10 w-full lg:flex justify-start items-start lg:gap-8 px-4">
   <img className="absolute right-0 hidden xl:block top-[-190px]" src="/Group1.svg" alt="" />
-
     <div class="w-full lg:w-[60%] flex flex-col">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl lg:w-[437px] font-semibold text-white mb-2">
         Our Story
@@ -252,10 +249,9 @@ const Aboutpage = () => {
     </div>
     
     <div
-      class=" absolute w-[30%] h-full top-30 right-0 hidden lg:block"
-    >
+      class=" absolute w-[26%] h-full top-30 right-0 hidden lg:block">
       <img class="w-full h-full object-cover" src="/Rectangle34.webp" alt="" />
-    </div>
+    </div>    
     
   </div>
 </section>

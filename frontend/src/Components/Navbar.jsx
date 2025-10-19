@@ -95,26 +95,26 @@ const Navbar = () => {
                             {/* Dropdown Content */}
                             {isServicesOpen && (
                                 <div className="absolute left-0 mt-0 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                                    <Link to="/service?service=machining" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
+                                    <Link to="/service?service=machining" className="block px-4 py-2 text-gray-800 hover:text-[#EA4D33] hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
                                         Machining
                                     </Link>
-                                    <Link to="/service?service=Fabrication" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
+                                    <Link to="/service?service=Fabrication" className="block px-4 py-2 text-gray-800 hover:text-[#EA4D33] hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
                                         Steel Fabrication
                                     </Link>
-                                    <Link to="/service?service=Rubber" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
+                                    <Link to="/service?service=Rubber" className="block px-4 py-2 text-gray-800 hover:text-[#EA4D33] hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
                                         Rubber and PU
                                     </Link>
-                                    <Link to="/service?service=Laser" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
+                                    <Link to="/service?service=Laser" className="block px-4 py-2 text-gray-800 hover:text-[#EA4D33] hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
                                         Laser and CNC
                                     </Link>
-                                    <Link to="/service?service=Cutting" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
+                                    <Link to="/service?service=Cutting" className="block px-4 py-2 text-gray-800 hover:text-[#EA4D33] hover:bg-gray-100 text-[16px]" onClick={() => { setIsServicesOpen(false); window.scrollY() }}>
                                         Cutting, Bending & Rolling
                                     </Link>
                                 </div>
                             )}
                         </div>
 
-                        <Link className={`nav-link text-[16px] xl:text-[18px] font-medium`} to="/contact" onClick={() => { window.scrollY() }}>Contact Us</Link>
+                        <Link className={`nav-link text-[16px]  xl:text-[18px] font-medium`} to="/contact" onClick={() => { window.scrollY() }}>Contact Us</Link>
                     </nav>
                 </div>
 

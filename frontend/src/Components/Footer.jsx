@@ -89,7 +89,7 @@ const Footer = ({tag}) => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="tel:+966 556207221" className="hover:text-white text-[16px] sm:text-[18px] font-normal transition">
-                Tel: +966 556207221
+                Tel: +966 534757184
                 </a>
               </li>
               <li>

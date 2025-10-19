@@ -11,14 +11,14 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 // Data Definitions
-const heroImages = ["/homeimage.webp", "/hero1.webp"];
+const heroImages = ["/fabric7.webp", "/cbr6.webp"];
 
 const expertiseCards = [
-  { id: 1, number: "01", title: "Machining Division", src: "/hero1.webp", link: "/service?service=machining" },
-  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/experties.webp", link: "/service?service=Fabrication" },
-  { id: 3, number: "03", title: "Rubber and PU Division", src: "/experties1.webp", link: "/service?service=Rubber" },
-  { id: 4, number: "04", title: "Laser and CNC", src: "/experties2.webp", link: "/service?service=Laser" },
-  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/experties.webp", link: "/service?service=Cutting" },
+  { id: 1, number: "01", title: "Machining Division", src: "/mach6.webp", link: "/service?service=machining" },
+  { id: 2, number: "02", title: "Steel Fabrication Division", src: "/fabric1.webp", link: "/service?service=Fabrication" },
+  { id: 3, number: "03", title: "Rubber and PU Division", src: "/rubber3.webp", link: "/service?service=Rubber" },
+  { id: 4, number: "04", title: "Laser and CNC", src: "/laser4.webp", link: "/service?service=Laser" },
+  { id: 5, number: "05", title: "Cutting, Bending & Rolling", src: "/cbr1.webp", link: "/service?service=Cutting" },
 ];
 
 const statsData = [
@@ -290,7 +290,7 @@ const Homepage = () => {
 
   {/* Tablet & above: only number text */}
   <span className="hidden sm:inline bg-[#131c23] text-white p-5 rounded-lg shadow-lg">
-    Tel: +966 556207221
+    Tel: +966 534757184
   </span>
 </a>
 
