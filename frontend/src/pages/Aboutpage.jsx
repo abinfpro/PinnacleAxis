@@ -76,7 +76,7 @@ const Aboutpage = () => {
       <section className="slider-wrapper relative">
         <div>
           <img
-            src="/cbr4.webp"
+            src="/about_image.webp"
             alt="About Us Background"
             className="w-full h-[100vh]  object-cover"
           />

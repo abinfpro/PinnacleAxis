@@ -13,17 +13,22 @@ const ContactCard = ({
   // imageSrc = "/contact.webp",
   imageAlt = "Contact Banner",
   tag
-}) => {
+}) => { 
 
   const location = useLocation();
  
   const footerImages = {
     "/":{image:"/fabric5.webp"},
     "/service":{image:"/laser1.webp"},
-    "/contact":{image:"/fabric2.webp"}
+    "/contact":{image:"/fabric2.webp"},
+    "?service=machining":{image:"/mach8.webp"},
+    "?service=Fabrication":{image:"/fabric2.webp"},
+    "?service=Rubber":{image:"/rubber2.webp"},
+    "?service=Laser":{image:"/laser4.webp"},
+    "?service=Cutting":{image:"/cbr6.webp"},
   }
   // fallback image if route not found
-const imageSrc = footerImages[location.pathname]?.image;
+const imageSrc = footerImages[location.search]?.image || footerImages[location.pathname]?.image 
 
 
   return (

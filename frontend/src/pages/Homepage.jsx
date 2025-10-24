@@ -11,7 +11,7 @@ const ACCENT_ORANGE = "#EA4D33";
 const PRIMARY_DARK = "#131C23";
 
 // Data Definitions
-const heroImages = ["/fabric7.webp", "/cbr6.webp"];
+const heroImages = ["/fabric7.webp","/HP.webp","/HP1.webp","/HP2.webp","/HP3.webp"];
 
 const expertiseCards = [
   { id: 1, number: "01", title: "Machining Division", src: "/mach6.webp", link: "/service?service=machining" },
@@ -45,7 +45,7 @@ const Homepage = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 4000); // Change slide every 5 seconds
     return () => clearInterval(timer);
   }, []);
 

@@ -52,7 +52,7 @@ const Navbar = () => {
                     <img
                         src="/Group 4.webp"
                         alt="Pinnacle Axis Logo"
-                        className="h-6 sm:h-8 md:h-10"
+                        className="h-8 sm:h-8 md:h-10"
                     />
                     <a className='absolute w-full h-full' href="/"></a>
                 </div>
